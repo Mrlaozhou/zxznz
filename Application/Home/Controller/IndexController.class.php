@@ -187,7 +187,7 @@ class IndexController extends Controller
                 $rand = getRandStr(4,2);
 
                 //拼接信息
-                $content = "您的验证码是：{$rand}。请不要把验证码泄露给其他人。【整形指南整】"; 
+                //$content = "您的验证码是：{$rand}。请不要把验证码泄露给其他人。【整形指南整】"; 
                 // $post_data = "account={$account}&password={$password}&mobile={$mobile}&content=".rawurlencode($content)."format=json";
                 
                 $post_data = "account={$account}&password={$password}&mobile={$mobile}&content=".rawurlencode("您的验证码是：{$rand}。请不要把验证码泄露给其他人。");
