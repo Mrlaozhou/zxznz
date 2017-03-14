@@ -1,0 +1,350 @@
+
+/* 
+*
+*   PC end register page CSS Style
+*
+*/
+
+html,body
+{
+	width: 100%;
+	height: 100%;
+}
+
+/****  top black nav css ****/
+.top-nav
+{
+	width: 100%;
+	height: 34px;
+	background: #2b2a2f;
+	color: #fff;
+	font-size: 12px;
+	line-height: 34px;
+}
+.top-nav .fl
+{
+	background: url(/Public/Home/images/icon-triangle.png);
+	background-size: 10px;
+	background-repeat: no-repeat;
+	background-position: 32px 16px;
+	width: 50px;
+}
+.top-nav a
+{
+	margin: 0 10px;
+}
+
+
+/***** Intermediate content area ******/
+
+/****** logo  ****/
+.logo
+{
+	height: 120px;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 20px 0;
+}
+.logo img
+{
+	width: 130px;
+	margin-right: 20px;
+}
+.logo span
+{
+	display: inline-block;
+	font-size: 24px;
+	color: #666;
+	line-height: 80px;
+	vertical-align: top;
+}
+
+
+/***** operate *******/
+
+/** operate-title **/
+.operate-title
+{
+	height: 60px;
+	border-bottom: 2px solid #ddd;
+	box-sizing: border-box;
+	text-align: center;
+}
+.operate-title li
+{
+	display: inline-block;
+	font-size: 16px;
+	color: #333;
+	margin: 30px 30px 0;
+	width: 142px;
+	line-height: 20px;
+	height: 30px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.operate-title li.active
+{
+	color: #d11337;
+	border-bottom: 2px solid #d11337;
+}
+.operate-title li.finshed
+{
+	color: #d11337;
+}
+.operate-title li span
+{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 20px;
+	background: #999;
+	color: #fff;
+	margin: 0 4px;
+}
+.operate-title li.active span,.operate-title li.finshed span
+{
+	background: #d11337;
+}
+
+
+/*** operate content set username ***/
+.content
+{
+	padding-bottom: 100px;
+}
+.set-username
+{
+	width: 328px;
+	margin: 76px auto 0;
+	/*display: none;*/
+}
+.set-username label
+{
+	display: inline-block;
+	width: 60px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	color: #333;
+}
+.set-username input
+{
+	width: 260px;
+	height: 38px;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	color: #999;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.user-tel-msg,.user-captcha-msg
+{
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 64px;
+	height: 22px;
+	margin-bottom: 5px;
+}
+.set-username .error
+{
+	color: #d11337;
+	border-color: #d11337;
+}
+.set-username .success
+{
+	color: #41b932;
+	border-color: #41b932;
+}
+.set-username .captcha
+{
+	width: 100px;
+}
+.set-username .get-captcha
+{
+	width: 100px;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	background: #d11337;
+	font-size: 14px;
+}
+.set-username .next
+{
+	width: 140px;
+	height: 38px;
+	color: #fff;
+	font-size: 16px;
+	background: #d11337;
+	text-align: center;
+	line-height: 38px;
+	margin-left: 64px;
+}
+
+
+/*** operate content fill out account information ****/
+.set-account-info
+{
+	width: 360px;
+	margin: 74px auto 0;
+	display: none;
+}
+.set-account-info label
+{
+	display: inline-block;
+	width: 80px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	color: #333;
+	text-align: right;
+	margin-right: 15px;
+}
+.set-account-info input
+{
+	width: 260px;
+	height: 38px;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	color: #999;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.user-password,.user-nick,.user-password-re,.user-name,.user-id
+{
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 100px;
+	height: 22px;
+	margin-bottom: 5px;
+}
+.set-account-info .error
+{
+	color: #d11337;
+	border-color: #d11337;
+}
+.set-account-info .success
+{
+	color: #41b932;
+	border-color: #41b932;
+}
+.set-account-info .confirm .btn-register
+{
+	width: 140px;
+	height: 38px;
+	background: #d11337;
+	color: #fff;
+	text-align: center;
+	line-height: 38px;
+	margin-left: 100px;
+	font-size: 16px;
+}
+.set-account-info input[type='checkbox']
+{
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.set-account-info .confirm
+{
+	width: 440px;
+	font-size: 12px;
+	line-height: 12px;
+}
+.set-account-info .confirm span
+{
+	vertical-align: middle;
+}
+.set-account-info .confirm a
+{
+	color: #d11337;
+	vertical-align: middle;
+}
+
+
+
+/**** operate content register successful ****/
+.register-successful
+{
+	width: 230px;
+	margin: 98px auto 0;
+	text-align: center;
+	display: none;
+}
+.successful-img img
+{
+	width: 142px;
+}
+.successful-msg
+{
+	font-size: 26px;
+	color: #333;
+	font-weight: bold;
+}
+.register-successful .line-t
+{
+	display: inline-block;
+	width: 100px;
+	height: 1px;
+	background: #ddd;
+	margin: 20px 0;
+}
+.register-successful .login-btn
+{
+	width: 130px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: #666;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 16px;
+}
+
+
+/*********  bottom copyright information *******/
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -40px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer,.page-wrap:after {
+  height: 40px; 
+}
+.footer
+{
+	width: 100%;
+	height: 40px;
+	background: #2b2a2f;
+}
+.footer .copyright
+{
+	text-align: center;
+	color: #fff;
+	line-height: 40px;
+	font-size: 12px;
+}
+
+/**** dialog ****/
+.dialog
+{
+	width: 150px;
+	height: 50px;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	font-size: 16px;
+	position: fixed;
+	top: 220px;
+	left: 50%;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 50px;
+	margin-left: -75px;
+	display: none;
+}

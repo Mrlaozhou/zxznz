@@ -18,6 +18,7 @@ class ActiveController extends Controller
     		'page_title' => '活动专场_智慧医美_整形指南针',
     		'page_desc'	 => PAGE_DESC,
     		));
+    	
 		$this->display();
 	}
 	public function detial()

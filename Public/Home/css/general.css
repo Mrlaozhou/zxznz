@@ -1,0 +1,587 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+
+
+a:link{
+	color:#DDDDDD;
+	text-decoration: none;
+}
+
+.floatR{
+	float:right;
+}
+
+.floatL{
+	float:left;
+}
+
+.clear{
+	clear:both;
+}
+
+ul li{
+	list-style:none;
+}
+
+
+
+.bk{
+	width:100%;
+	height:300px;
+}
+
+
+.list {
+	width:100%;
+	margin-top:;
+}
+
+.list .lbody{
+	width:1000px;
+	margin:0 auto;
+	
+}
+
+.list-now{}
+
+.list-now-top{
+	width:100%;
+	height:73px;
+	margin-bottom:30px;
+	background-image:url(/Public/Home/images/now.jpg);
+}
+
+.list-now-item {}
+
+.list-now-item li{
+	width:1000px;
+	height:300px;
+	margin-bottom:30px;
+}
+.list-now-item li .title{
+	color:white;
+	width:300px;
+	height:40px;
+	line-height:40px;
+	margin:0 auto;
+	text-align:center;
+	background: black;
+}
+
+.list-now-item li .intro{
+	margin-top:10px;
+	color:#777;
+	font-size:14px;
+	letter-spacing: 2px;
+}
+
+.list-now-item li .price{
+	width:100%;
+	height:100px;
+	position: relative;
+	top:80px;
+	
+}
+
+
+
+.price .price-left{
+	width:240px;
+	height:100%;
+	
+}
+.price .price-right{
+	width:120px;
+	height:270px;
+	
+}
+
+
+.list-now-item {}
+
+.list-pass{
+	margin-top: 70px;
+}
+
+.list-pass-top{
+	width:100%;
+	height:73px;
+	margin-bottom:30px;
+	background-image:url(/Public/Home/images/pass1.jpg); 
+}
+
+
+.list-pass-item li{
+	width:1000px;
+	height:300px;
+	margin-bottom:30px;
+}
+.list-pass-item li .title{
+	color:white;
+	width:300px;
+	height:40px;
+	line-height:40px;
+	margin:0 auto;
+	text-align:center;
+	background: #BBB;
+}
+
+.list-pass-item li .intro{
+	margin-top:10px;
+	color:#777;
+	font-size:14px;
+	letter-spacing: 2px;
+}
+
+.list-pass-item li .price{
+	width:100%;
+	height:100px;
+	position: relative;
+	top:80px;
+	
+}
+.price .price-left{
+	width:240px;
+	height:100%;
+	
+}
+.price .price-right{
+	width:120px;
+	height:270px;
+	
+}
+
+.li-right{
+	
+}
+
+.fixed{
+	width:86px;
+	position: fixed;
+	top:610px;
+	left:100px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.fixed img{
+	border:none;
+}
+
+.fixed div{
+	padding:0;
+	margin:0;
+}
+
+.bottom{
+	width:100%;
+	height:200px;
+	margin-top:100px;
+	background:#2B2A2F;
+}
+
+
+/************内容页**************/
+
+.n-content{
+	width:100%;
+}
+
+.n-box{
+	width:70%;
+	margin:50px auto 0;
+	height:;
+	
+}
+
+.n-box .n-top{
+	height:400px;
+}
+
+.n-box .n-top .left{
+	width:55%;
+	height:100%;
+	
+}
+
+.n-box .n-top .right{
+	width:40%;
+	height:100%;
+}
+
+
+/*******************************/
+
+.z-content{
+	width:100%;
+
+	margin:0 0 50px 0;
+	
+}
+
+.z-top{
+	width:100%;
+	height:230px;
+	margin-bottom:80px;
+}
+
+.z-box{
+	width:1000px;
+	
+	margin:0 auto;
+	
+}
+.z-box-top{
+	width:100%;
+	height:48px;
+	margin-bottom:35px;
+}
+
+.z-box-content{
+	width:100%;
+	
+}
+
+.z-box-content ul{
+	position: relative;
+}
+
+.z-box-content>ul li{
+	float:left;
+	cursor:pointer;
+	width:249px;
+	height:300px;
+}
+
+.z-box-content ul li img{
+
+}
+
+.z-page{
+	width:100%;
+	margin:30px 0;
+}
+
+.z-page ul {
+	margin:0 auto;
+	width:350px;
+	color:#000;
+	font-size:16px;
+
+}
+.z-page ul li{
+	float:left;
+	padding:0 10px;
+}
+
+.z-page ul li a{
+	color:#000;
+}
+
+.z-over{
+	width:100%;
+	height:255px;
+	position: absolute;
+	top:0;
+	right:0;
+	background:#EEEEEE;
+	display:none;
+}
+
+/**********************************/
+
+.h-content{
+	width:100%;
+
+	margin:0 0 50px 0;
+	
+}
+
+.h-top{
+	width:100%;
+	height:230px;
+	margin-bottom:80px;
+}
+
+.h-box{
+	width:1000px;
+	
+	margin:0 auto;
+	
+}
+.h-box-top{
+	width:100%;
+	height:48px;
+	margin-bottom:35px;
+}
+
+.h-box-content{
+	width:100%;	
+	padding:50px 0;
+}
+
+
+.h-box-content>ul li{
+	width:300px;
+	height:352px;
+	float:left;
+	margin-bottom:20px;
+
+}
+.h-box-content ul li a{
+	display:block;
+}
+
+.h-box-content .name{
+	
+	border:1px solid white;
+}
+
+.shadow{
+	box-shadow:1px 1px 5px 5px #BBBBBB;
+}
+
+.h-page{
+	width:100%;
+	margin:30px 0;
+}
+
+.h-page ul {
+	margin:0 auto;
+	width:350px;
+	color:#000;
+	font-size:16px;
+
+}
+.h-page ul li{
+	float:left;
+	padding:0 10px;
+}
+
+.h-page ul li a{
+	color:#000;
+}
+
+/**************************/
+//贊助商頁面
+.s-content{
+	width:100%;
+
+	margin:0 0 50px 0;
+	
+}
+
+.s-top{
+	width:100%;
+	height:230px;
+	margin-bottom:80px;
+}
+
+.s-box{
+	width:1000px;
+	margin:50px auto;
+}
+
+.s-box ul {
+	width:100%;
+}
+.s-box ul li{
+	float:left;
+	margin:0 10px;
+}
+
+.s-box ul li img{
+	border:1px solid black;
+}
+
+/******************************/
+.help-content{
+	width:100%;
+
+	margin:0 0 50px 0;
+	
+}
+
+.help-top{
+	width:100%;
+	height:230px;
+	margin-bottom:80px;
+}
+
+.help-box{
+	width:1000px;
+	margin:50px auto;
+}
+
+.help-box ul{
+	width:100%;
+	color:white;
+}
+
+.help-box ul li{
+	width:330px;
+	height:600px;
+	float:left;
+	margin-bottom:0.5%;
+	position: relative;
+}
+
+/*********************************/
+//医院详情页
+.h-d-content{
+	width:100%;
+	margin:0 0 50px 0;
+}
+
+.h-d-top{
+	width:100%;
+	height:230px;
+}
+
+.h-d-box{
+	width:1000px;
+	margin:50px auto;
+	
+}
+
+.h-d-box .left{
+	width:30%;
+	/*height:300px;*/
+	
+}
+
+.h-d-box .right{
+	width:64%;
+	color:#777777;
+}
+
+
+/********************************/
+//私人定制
+.pri-content{
+	width:100%;
+
+	margin:0 0 50px 0;
+	
+}
+
+.pri-top{
+	width:100%;
+	height:460px;
+	margin-bottom:80px;
+}
+
+.pb-list1{
+	width:1000px;
+	height:600px;
+	margin:50px auto 0;
+}
+
+.pb-list2{
+	width:100%;
+	height:900px;
+	margin-bottom:30px;
+	background-image:url(../images/pb-list2-bg.jpg);
+	background-size:1440px 960px;
+}
+.pb-list3{
+	width:1000px;
+	margin:30px auto;
+	
+}
+
+.pb-list3 p{
+	width:80%;
+	margin:10px auto;
+	color:#999999;
+}
+
+.pb-list4{
+	width:1000px;
+	margin:50px auto;
+	
+}
+
+.pb-list5{
+	width:100%;
+	margin:50px auto;
+	background:#eeeeee;
+	padding:20px 0;
+}
+
+.pb-list6{
+	width:100%;
+	margin:50px auto 0;
+	background:#2c1b10;
+	padding:50px 0;
+}
+
+/***********************/
+//ours
+.ours{
+	width:100%;
+}
+.ours-top{
+
+}
+.ours-content{
+	width:1000px;
+	height:;
+	margin:50px auto;
+}
+.ours-c-top{
+	text-align: center;
+}
+.ours-c-content{
+	width:100%;
+	height:420px;
+	font-size:15px;
+	line-height:35px;
+}
+/*************************/
+//connect
+.connect{
+	width:100%;
+}
+.connect-content{
+	width:100%;
+	height:680px;
+	position: relative;
+}
+.connect-empty{
+	width:100%;
+	height:280px;
+}
+
+.connect-fixed{
+	width:640px;
+	height:380px;
+	position: absolute;
+	top:30px;
+	left:50%;
+	margin-left: -320px;
+	z-index:1;
+	background-image: url(/Public/Home/images/connect-f-bg.png);
+}
+.connect-fixed li{
+	margin:20px 0;
+}
+.connect-fixed li p{
+	text-align:center;
+	font-size:14px;
+}
+
+.connect-map{
+	width:100%;
+	height:400px;
+}
+
+/**********************/
+//theme
+
+
+/**********************/
+//publish

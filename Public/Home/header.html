@@ -1,0 +1,120 @@
+<!DOCTYPE.php PUBLIC "-//W3C//DTD .php 1.0 Transitional//EN" "http://www.w3.org/TR/.php1/DTD/.php1-transitional.dtd">
+
+<head>
+<meta http-equiv="Content-Type" content="text.php; charset=utf-8" />
+<title><?php echo $page_title;?></title>
+<meta name="keywords" content="<?php echo $page_key;?>" />
+<meta name="description" content="<?php echo $page_desc?>" />
+<meta name="baidu-site-verification" content="MGxh1YOaOJ" />
+<link type="text/css" rel="stylesheet" href="/Public/Home/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/Public/Home/css/general.css">
+<link rel="stylesheet" type="text/css" href="/Public/Home/qyfb/css/css_xz.css">
+<link rel="stylesheet" type="text/css" href="/Public/Home/css/global.css">
+<link rel="stylesheet" type="text/css" href="/Public/Home/css/template-comment.css">
+<script src="/Public/Home/js/jquery.min.js"></script>
+<script src="/Public/Home/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="/Public/Home/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/Public/Home/js/general.js"></script>
+<script type="text/javascript" src="/Public/Home/js/jquery.SuperSlide.2.1.1.js"></script>
+
+<!--index hospital-lb 配置-->
+    <link href="/Public/Home/hos-lb/css/style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="/Public/Home/hos-lb/js/slider.js"></script>
+    <script type="text/javascript" src="/Public/Home/hos-lb/js/base.js"></script>
+
+<!--index doctor-lb 配置-->
+    <!-- <link rel="stylesheet" type="text/css" href="/Public/Home/doc-lb/css/normalize.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/Public/Home/doc-lb/css/default.css"> -->
+    <link rel="stylesheet" type="text/css" href="/Public/Home/doc-lb/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Home/doc-lb/vendor/railscasts.css" />
+<script type="text/javascript">
+$(document).ready(function()
+{
+       
+        $("#top_city").mouseover(function(){
+            $("#city_con").show();
+        });
+ 
+        $("#top_city").mouseout(function(){
+             $("#city_con").hide();
+		})
+});
+</script>
+</head>
+
+<body>
+<div class="top">
+	<div class="top_con">
+    	<div class="top_city" id="top_city"><a href="javascript:void(0)">上海</a>
+        	<div class="city_con" id="city_con"><a href="javascript:void(0)">北京</a><a href="javascript:void(0)">上海</a><a href="javascript:void(0)">天津</a><a href="javascript:void(0)">广州</a><a href="javascript:void(0)">武汉</a><a href="javascript:void(0)">厦门</a><a href="javascript:void(0)">南京</a><a href="javascript:void(0)">深圳</a></div>
+        </div>
+        
+        <div class="top_right">
+        <?php if( session('user_id') ):?>
+            <?php echo session('user_name');?>
+        <?php else:?>
+            <a href="<?php echo U('login');?>">登录</a>
+            　/　
+            <a href="<?php echo U('register');?>">注册</a>
+        <?php endif;?>
+        </div>
+    </div>
+</div>
+<div class="head">
+	<div class="logo"><a href="<?php echo U('Index/index');?>"><img src="/Public/Home/images/LOGO.png" border="0" /></a></div>
+    <div class="search">
+    	<form id="form1">
+        <div class="sform">
+            <input type="text" name="keybord" class="keybord" id="keybord" />
+            <input type="image" src="/Public/Home/images/search.jpg">
+            <div class="clear"></div>
+        </div>
+        <p style="padding-left:30px;">
+            <a href="javascript:void(0)">整形</a><i>|</i>
+            <a href="javascript:void(0)">双眼皮</a><i>|</i>
+            <a href="javascript:void(0)">隆鼻</a><i>|</i>
+            <a href="javascript:void(0)">皮肤</a><i>|</i>
+            <a href="javascript:void(0)">毛发</a><i>|</i>
+            <a href="javascript:void(0)">牙齿</a>
+        </p>
+        </form>
+    </div>
+</div>
+
+<div class="nav">
+	<div class="nav_cen">
+    	<div class="nav_left">
+        	<a href="<?php echo U('Index/index?navNum=1');?>" <?php if( I( 'get.navNum' ) == 1 || !I( 'get.navNum' ) ){ echo "class='hover'"; }?>>首 页</a>
+            <a href="<?php echo U('Publish/index?navNum=4');?>" <?php if( I( 'get.navNum' ) == 4 ){ echo "class='hover'"; }?>>前沿发布</a>
+            <a href="<?php echo U('Active/theme1?navNum=6');?>" <?php if( I( 'get.navNum' ) == 6 ){ echo "class='hover'"; }?>>活动专场</a>
+            <a href="<?php echo U('Doctor/index?navNum=2');?>" <?php if( I( 'get.navNum' ) == 2 ){ echo "class='hover'"; }?>>专家库</a>
+            <a href="<?php echo U('Hospital/index?navNum=3');?>" <?php if( I( 'get.navNum' ) == 3 ){ echo "class='hover'"; }?>>医院专区</a>
+            <a href="<?php echo U('Help/index?navNum=5');?>" <?php if( I( 'get.navNum' ) == 5 ){ echo "class='hover'"; }?>>整形助手</a>
+            <!-- <a href="<?php //echo U('Sponsor/index?navNum=7');?>" <?php //if( I( 'get.navNum' ) == 7 ){ echo "class='hover'"; }?>>战略合作</a> -->
+            <div class="clear"></div>
+        </div>
+        <div class="nav_right">
+        	<i><a href="<?php echo U('Index/connect');?>"><img src="/Public/Home/images/ico01.jpg" /></a></i>
+            <i class="ic"><a href="<?php echo U('Index/ours');?>"><img src="/Public/Home/images/ico02.jpg" /></a></i>
+            <i><a href="javascript:void(0)"><img src="/Public/Home/images/ico03.jpg" /></a></i>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div class="allback">
+    <div class="" style="width:50px;height:50px;">
+        <a id="back" href="javascript:;">
+            <img style="width:50px;" src="/Public/Home/images/allback.png">
+        </a>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+    $('#back').click(function(){
+        history.go(-1);
+    })
+})
+</script>

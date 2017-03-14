@@ -1,0 +1,44 @@
+<layout name="layout" />
+
+<div class="main-div">
+    <form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data">
+        <table cellspacing="1" cellpadding="3" width="100%">
+            <tr>
+                <td class="label">导航栏名称：</td>
+                <td>
+                    <input  type="text" name="name" value="<?php echo $info['name'];?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">对应的控制器名：</td>
+                <td>
+                    <input  type="text" name="controller" value="<?php echo $info['controller'];?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">对应的方法名：</td>
+                <td>
+                    <input  type="text" name="action" value="<?php echo $info['action'];?>" />
+                </td>
+            </tr>
+            <tr>
+                    <td class="label">是否显示</td>
+                    <td>
+                        <input type="radio" name="is_show" value="1" <?php if($info['is_show'] == '1'){echo "checked='checked'";}?>/> 是
+                        <input type="radio" name="is_show" value="0" <?php if($info['is_show'] == '0'){echo "checked='checked'";}?>  /> 否
+                        <br /><br />
+                    </td>
+            </tr>
+            
+            <tr>
+                <td colspan="99" align="center">
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                    <input type="hidden" name="id" value="<?php echo $info['id'];?>" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+</script>

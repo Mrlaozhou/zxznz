@@ -53,17 +53,14 @@ class BaseController extends Controller
 					'2'		=>	'Admin-Index-top',
 					'3'		=>	'Admin-Index-menu',
 					'4'		=>	'Admin-Index-main',
-					'5'		=>	'Admin-Index-showPerson',
+					'5'		=>	'Admin-Index-showperson',
 					);
 
 				//合并权限
 				$PRI = array_merge($pri,$public);
-
 				
 				//当前路由
-				$currentPath = MODULE_NAME.'-'.CONTROLLER_NAME.'-'.ACTION_NAME;
-
-
+				$currentPath = MODULE_NAME.'-'.CONTROLLER_NAME.'-'.toLower(ACTION_NAME);
 				//权限判断
 				if( !in_array($currentPath,$PRI) )
 				{

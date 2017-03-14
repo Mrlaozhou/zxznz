@@ -346,6 +346,10 @@ function UnRar($filename,$savepath,$del=FALSE)
 }
 
 
+function toLower($config)
+{
+	return is_array($config) ? array_map('toLower',$config) : strtolower($config);
+}
 
 
 

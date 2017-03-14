@@ -1,9 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller 
-{
-
+class IndexController extends Controller {
     public function index()
     {
         /*******数据提取*******/
@@ -11,28 +9,27 @@ class IndexController extends Controller
 
         //doctor
         $Dinfo = $model->getDoc();
-
         
         //hospital
         $Hinfo = $model->getHos();
 
 
-    	$this->assign(array(
-    		'page_title' => '智慧医美_整形指南针',
-    		'page_desc'	 => 'e折整形 全国抢购',
+        $this->assign(array(
+            'page_title' => '智慧医美_整形指南针',
+            'page_desc'  => 'e折整形 全国抢购',
 
             'Dinfo'      => $Dinfo,
             'Hinfo'      => $Hinfo,
-    		));
+            ));
         $this->display();
     }
 
     public function ours()
     {
-		$this->assign(array(
-    		'page_title' => '关于我们_智慧医美_整形指南针',
-    		'page_desc'	 => 'e折整形 全国抢购',
-    		));
+        $this->assign(array(
+            'page_title' => '关于我们_智慧医美_整形指南针',
+            'page_desc'  => 'e折整形 全国抢购',
+            ));
         $this->display();
     }
 
@@ -70,38 +67,7 @@ class IndexController extends Controller
 
     public function register()
     {
-        header("Access-Control-Allow-Origin:*");
-        if( 1 )
-        {
-            $model = new \Home\Model\UserModel();
-            if ( $model->create( I('post.') , 1 ) )
-            {
-                if ( $model->add() )
-                {
-                    echo json_encode(array(
-                        'status'    =>  TRUE,
-                        ));
-                }
-                else
-                {
-                    echo json_encode(array(
-                        'status'    =>  FALSE,
-                        'info'      =>  '001',
-                        ));
-                }
-            }
-            else
-            {
-                echo json_encode(array(
-                    'status'    =>  FALSE,
-                    'info'      =>  '002',
-                    ));
-            }
-        }
-        else
-        {
-            echo 'hahaha';
-        }
+        $this->display();
     }
 
     public function outLogin()
@@ -577,126 +543,4 @@ class IndexController extends Controller
         }
     }
 
-    public function checkUser()
-    {
-        header("Access-Control-Allow-Origin:*");
-        $config = trim(I('post.username'));
-
-        if( $config )
-        {
-            //实例化模型
-            $model = D('Index');
-            $result = $model->rExists($config);
-
-            if( $result === 2 )
-            {
-                echo json_encode(array(
-                    'status'    =>  TRUE,
-                    ));
-            }
-            else
-            {
-                echo json_encode(array(
-                    'status'    =>  FALSE,
-                    'info'      =>  '!003',
-                    ));
-            }
-        }
-        else
-        {
-            echo json_encode(array(
-                'status'    =>  FALSE,
-                'info'      =>  '001',
-                ));
-        }
-    }
-
-    public function user_login()
-    {
-        header("Access-Control-Allow-Origin:*");
-        //接受参数
-        $config = I('post.');
-
-        if( count($config) === 2 )
-        {
-            //处理参数
-            $config = array_map('trim',$config);
-            if( !empty($config['username']) && !empty($config['password']) )
-            {
-                //验证用户是否注册
-                $model = D('Index');
-                $result = $model->rExists($config['username']);
-                if( $result === 2 )
-                {
-                    //实例化user 模型
-                    $user = M('User');
-                    $info = $user->field('id,username,password,alias')
-                                 ->where(array(
-                                    'username'  =>  array('eq',$config['username']),
-                                    ))
-                                 ->find();
-                    $info = array_map('trim',$info);
-
-                    if( $info )
-                    {
-                        if( $info['username'] === $config['username'] )
-                        {
-                            if( $info['password'] === md5($config['password']) )
-                            {
-                                echo json_encode(array(
-                                    'status'    =>  TRUE,
-                                    'user'   =>  $info,
-                                    ));
-                            }
-                            else
-                            {
-                                echo json_encode(array(
-                                    'status'    =>  FALSE,
-                                    'info'      =>  '0022',
-                                    'remark'    =>  '密码错误',
-                                    ));
-                            }
-                        }
-                        else
-                        {
-                            //二级验证 出错 ===> xss攻击
-                            echo json_encode(array(
-                                'status'    =>  FALSE,
-                                'info'      =>  '004',
-                                ));
-                        }
-                    }
-                    else
-                    {
-                        //存在用户  提取信息失败 
-                        echo json_encode(array(
-                            'status'    =>  FALSE,
-                            'info'      =>  '444',
-                            ));
-                    }
-                }
-                else
-                {
-                    echo json_encode(array(
-                        'status'    =>  FALSE,
-                        'info'      =>  '!003',
-                        ));
-                }
-            }
-            else
-            {
-                echo json_encode(array(
-                    'status'    =>  FALSE,
-                    'info'      =>  '0011',
-                    ));
-            }
-        }
-        else
-        {
-            echo json_encode(array(
-                'status'    =>  FALSE,
-                'info'      =>  '001',
-                ));
-        }
-    }
 }

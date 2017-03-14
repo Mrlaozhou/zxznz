@@ -47,6 +47,7 @@ class IndexModel
         return $Dinfo;
 	}
 
+
     /*********/
     public function rExists($config)
     {
