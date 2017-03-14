@@ -39,7 +39,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-	    <form method="post" action="/index.php/Admin/Active/edit/id/1.html" enctype="multipart/form-data" >
+	    <form method="post" action="/index.php/Admin/Active/edit/id/5.html" enctype="multipart/form-data" >
 	    	<!-- 基本信息 -->
 	        <table class="tab_content" cellspacing="1" cellpadding="3" width="100%">
 	            <tr>
@@ -113,13 +113,27 @@
 	                    <br /><br />
 	                </td>
 	            </tr>
+	            <tr>
+	                <td class="label">预约费</td>
+	                <td>
+	                    <input type="text" name="price" value="<?php echo $info['price'];?>">
+	                    <br /><br />
+	                </td>
+	            </tr>
+	            <tr>
+	                <td class="label">介绍</td>
+	                <td>
+	                    <textarea style="width:40%;" name="intro"><?php echo strip_tags($info['intro']);?></textarea>
+	                    <br /><br />
+	                </td>
+	            </tr>
 	        </table>
 	        <!-- 活动介绍 -->
 	        <table style="display:none;" class="tab_content" cellspacing="1" cellpadding="3" width="100%">
 	        	<tr>
 	                <td>
-	                	<textarea id="intro" name="intro" cols="60" rows="4"  >
-		                	<?php echo htmlspecialchars_decode($info['intro']);?>
+	                	<textarea id="intro" name="detial" cols="60" rows="4"  >
+		                	<?php echo htmlspecialchars_decode($info['detial']);?>
 		                </textarea>
 	                </td>
 	            </tr>

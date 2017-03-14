@@ -37,30 +37,50 @@ class IndexController extends Controller {
     {
         if ( IS_POST )
         {
-            // dump( I('post.') );
-            // exit;
+            $config = I('post.');
 
-            $model = new \Home\Model\UserModel();
-            $status = $model->checkLogin( I('post.') );
-
-            //根据model 返回的值  执行结果
-            switch ($status)
+            if( isset($config['loginKey']) && ($config['loginKey'] == session('loginKey')) )
             {
-                case 0:
-                    $this->error('您输入的用户名有误，请核对后再次输入');
-                    break;
-                case -7:
-                    $this->error('您输入的密码有误，请核对后再次输入');
-                    break;
-                default:
-                    // 更新  最新操作时间
-                    $model->last_time = time();
-                    //登录成功  跳转
-                    $this->success('登录成功！', U('index') );
+                // dump($config);
+                // exit;
+
+
+                $model = new \Home\Model\UserModel();
+                $status = $model->checkLogin( $config );
+
+                //根据model 返回的值  执行结果
+                switch ($status)
+                {
+                    case 0:
+                        $this->error('您输入的用户名有误，请核对后再次输入');
+                        break;
+                    case -7:
+                        $this->error('您输入的密码有误，请核对后再次输入');
+                        break;
+                    default:
+                        // 更新  最新操作时间
+                        $model->last_time = time();
+                        //登录成功  跳转
+                        $this->success('登录成功！', session('from') );
+                }   
+            }
+            else
+            {
+                $this->error('非法操作！');
             }
         }
         else
         {
+            $str = getRandStr(10,1,true);
+            session('loginKey',$str);
+
+            //采集跳转页面
+            session('from',$_SERVER['HTTP_REFERER']);
+
+            $this->assign(array(
+                'loginKey'      =>  session('loginKey'),
+                ));
+
             $this->display();
         }
     }
@@ -540,6 +560,35 @@ class IndexController extends Controller {
             'status'    =>  FALSE,
             'info'      =>  '001',
            )); 
+        }
+    }
+
+    /***************///3.14 登录--检验用户名是否存在
+    public function checkLoginUser()
+    {
+        header("Access-Control-Allow-Origin:*");
+        //实例化模型
+        $config = I('post.');
+
+        if( !empty( $config ) )
+        {
+            $phone = trim($config['phone']);
+
+            $model = D('Index');
+            $result = $model->rExists($phone); 
+
+            if( $result === 2 )
+            {
+                echo json_encode(array(
+                    'status'    =>  TRUE,
+                    ));
+            }
+            else
+            {
+                echo json_encode(array(
+                    'status'    =>  FALSE,
+                    ));
+            }
         }
     }
 

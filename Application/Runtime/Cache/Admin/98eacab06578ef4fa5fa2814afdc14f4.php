@@ -112,11 +112,25 @@
 	                    <br /><br />
 	                </td>
 	            </tr>
+	            <tr>
+	                <td class="label">预约费</td>
+	                <td>
+	                    <input type="text" name="price">
+	                    <br /><br />
+	                </td>
+	            </tr>
+	            <tr>
+	                <td class="label">介绍</td>
+	                <td>
+	                    <textarea style="width:40%;" name="intro"></textarea>
+	                    <br /><br />
+	                </td>
+	            </tr>
 	        </table>
 	        <!-- 活动介绍 -->
 	        <table style="display:none;" class="tab_content" cellspacing="1" cellpadding="3" width="100%">
 	        	<tr>
-	                <td><textarea id="intro" name="intro" cols="60" rows="4"  ></textarea></td>
+	                <td><textarea id="intro" name="detial" cols="60" rows="4"  ></textarea></td>
 	            </tr>
 	        </table>
 	        <!-- 活动相册 -->

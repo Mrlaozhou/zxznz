@@ -178,7 +178,7 @@
 
 	                    	</div>
 	                    	<div class="floatR" style="width:655px;height:356px;">
-	                    		<a href="<?php echo U('lst?navNum=6');?>"><img src="/Public/Home/images/theme-08.jpg"></a>
+	                    		<a href="<?php echo U('lst?navNum=6');?>"><img src="/Public/Home/images/theme-28.jpg"></a>
 	                    	</div>
 	                    	<div class="clear"></div>
 	                    </li> 
