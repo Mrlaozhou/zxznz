@@ -26,7 +26,30 @@
 	                    <br /><br />
 	                </td>
 	            </tr>
-	            
+	            <tr>
+	                <td class="label">行为</td>
+	                <td>
+						<input type="text" name="action" size="20" value="<?php echo $info['action'];?>"/>
+						<span class="require-field">*</span>
+	                    <br /><br />
+	                </td>
+	            </tr>
+	            <tr>
+	                <td class="label">上传页面</td>
+	                <td>
+						<input type="file" name="html" size="40" />
+						<span class="require-field">*</span>
+	                    <br /><br />
+	                </td>
+	            </tr>
+	            <tr>
+	                <td class="label">上传图片压缩包</td>
+	                <td>
+						<input type="file" name="imgRar" size="40" />
+						<span class="require-field">*</span>
+	                    <br /><br />
+	                </td>
+	            </tr>
 	            <tr>
 	                <td class="label">活动地址</td>
 	                <td>
@@ -35,7 +58,14 @@
 	                    <br /><br />
 	                </td>
 	            </tr>
-	        
+	        	<tr>
+	                <td class="label">活动医院</td>
+	                <td>
+						<input type="text" name="hospital" size="40" value="<?php echo $info['hospital'];?>" />
+						<span class="require-field">*</span>
+	                    <br /><br />
+	                </td>
+	            </tr>
 	            <tr>
 	                <td class="label">活动照片</td>
 	                <td>
@@ -45,14 +75,15 @@
 	                    <br /><br />
 	                </td>
 	            </tr>
-	            <tr>
+
+	            <!-- <tr>
 	                <td class="label">活动项目</td>
 	                <td>
 	                    <input type="text" name="object" size='30'  value="<?php echo $info['object'];?>"/>
 	                    <span class="require-field">* 请用逗号隔开</span>
 	                    <br /><br />
 	                </td>
-	            </tr>
+	            </tr> -->
 
 	            <tr>
 	                <td class="label">活动时间</td>

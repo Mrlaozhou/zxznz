@@ -24,7 +24,9 @@ class ActiveController extends BaseController
 		{
 			//实例化模型类
 			$model = D('Active');
-
+			// dump(I('post.'));
+			// dump($_FILES);
+			// exit;
 			if( $model->create( I('post.'),1 ) )
 			{
 				if( $model->add() )
@@ -108,7 +110,7 @@ class ActiveController extends BaseController
 			//提取当前数据
 			//id 
 			$id = I('get.id');
-			$info = $model->field('id,title,pic,object,start_time,end_time,location,join_num,is_top,is_show,status,create_time,intro,price,detial')
+			$info = $model->field('id,title,pic,start_time,end_time,location,join_num,is_show,status,create_time,intro,price,detial,action,hospital')
 						  ->find( $id );
 
  			$this->assign(array(

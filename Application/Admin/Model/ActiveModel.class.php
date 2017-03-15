@@ -3,8 +3,8 @@ namespace Admin\Model;
 use Think\Model;
 class ActiveModel extends Model
 {
-	public $insertFields = array('title','pic','intro','object','start_time','end_time','location','price','join_num','create_time','is_top','is_show','status','detial');
-    public $updateFields = array('id','title','pic','intro','object','start_time','end_time','location','price','join_num','create_time','is_top','is_show','status','detial');
+	public $insertFields = array('title','pic','intro','hospital','start_time','end_time','location','price','join_num','create_time','is_show','status','detial','action');
+    public $updateFields = array('id','title','pic','intro','hospital','start_time','end_time','location','price','join_num','create_time','is_show','status','detial','action');
 
 	public $_validate = array(
 		array('title','require','活动标题不能为空',1),
@@ -23,8 +23,56 @@ class ActiveModel extends Model
     protected function _before_insert(&$data,$options) 
     {
     	//数据处理
-        $data['object'] = str_replace("，",",",$data['object']);
     	$data['intro'] = preventTags(trim($data['intro']));
+        /**********上传页面***********/
+        if( isset( $_FILES['html'] ) && $_FILES['html']['error'] === 0 )
+        {       
+            //实例化上传类
+            $upload = new \Think\Upload();
+
+            //配置
+            $upload->maxSize = 8*1024*1024;
+            $upload->exts = array('html');
+            $upload->rootPath = APP_PATH.'Home/View/';
+            $upload->savePath = 'Active/';
+            $upload->autoSub  = FALSE;
+            $upload->saveName = $data['action'];
+            $upload->replace = TRUE;
+
+            //上传
+            $info = $upload->uploadOne( $_FILES['html'] );
+
+            //判断
+            if( !$info )
+            {
+                $this->error = $upload->getError();
+                return FALSE;           
+            }
+        }
+        //上传图片压缩包
+        if( isset( $_FILES['imgRar'] ) && $_FILES['imgRar']['error'] === 0 )
+        {
+            //实例化上传类
+            $upload = new \Think\Upload();
+            //配置
+            $upload->maxSize = 8*1024*1024;
+            $upload->exts = array('rar');
+            $upload->rootPath = './Public/Uploads/';
+            $upload->savePath = 'Active_img/';
+            $upload->autoSub  = FALSE;
+            $upload->saveName = $data['action'];
+            //上传
+            $info = $upload->uploadOne( $_FILES['imgRar'] );
+
+            //判断--如果上传成功
+            if( !$info )
+            {
+                $this->error = $upload->getError();
+                return FALSE;
+            }
+            //上传成功、解压压缩包
+            UnRar(__UPLOADS__.'Active_img/'.$data['action'].'.rar',__UPLOADS__.'Active_img/',TRUE);
+        }
     	/**********上传图片***********/
     	if( isset( $_FILES['pic'] ) && $_FILES['pic']['error'] === 0 )
     	{
@@ -44,10 +92,6 @@ class ActiveModel extends Model
     			//路径
     			$data['pic'] = $info['savepath'].$info['savename'];
 
-    			//修改图片尺寸
-    			//changeImage($img,$path,$width,$height,$saveName,$type = 6)
-                //$oldPic = $data['pic'];
-                //$data['pic'] = changeImage(__UPLOADS__.$oldPic,__UPLOADS__,550,300,$oldPic);
     		}else
     		{
     			$this->error = $upload->getError();
@@ -62,8 +106,110 @@ class ActiveModel extends Model
     // 更新数据前的回调方法
     protected function _before_update(&$data,$options) 
     {
-        $data['object'] = str_replace("，",",",$data['object']);
         $data['intro'] = preventTags(trim($data['intro']));
+        /************处理页面************/
+        //判断行为是否该变
+        $info = $this->field('action')
+                       ->find($options['where']['id']);
+        $action = $info['action'];
+        if( $data['action'] == $action )
+        {
+            //没有改变 判断是否有上传文件
+            if( isset( $_FILES['html'] ) && $_FILES['html']['error'] === 0 )
+            {       
+                //实例化上传类
+                $upload = new \Think\Upload();
+
+                //配置
+                $upload->maxSize = 8*1024*1024;
+                $upload->exts = array('html');
+                $upload->rootPath = APP_PATH.'Home/View/';
+                $upload->savePath = 'Active/';
+                $upload->autoSub  = FALSE;
+                $upload->saveName = $data['action'];
+                $upload->replace = TRUE;
+
+                //上传
+                $info = $upload->uploadOne( $_FILES['html'] );
+
+                //判断
+                if( !$info )
+                {
+                    $this->error = $upload->getError();
+                    return FALSE;           
+                }
+            }
+        }
+        else
+        {
+            //行为改变  有文件上传
+            if( isset( $_FILES['html'] ) && $_FILES['html']['error'] === 0 )
+            {
+                //实例化上传类
+                $upload = new \Think\Upload();
+
+                //配置
+                $upload->maxSize = 8*1024*1024;
+                $upload->exts = array('html');
+                $upload->rootPath = APP_PATH.'Home/View/';
+                $upload->savePath = 'Active/';
+                $upload->autoSub  = FALSE;
+                $upload->saveName = $data['action'];
+                $upload->replace = TRUE;
+
+                //上传
+                $info = $upload->uploadOne( $_FILES['html'] );
+
+                //判断
+                if( !$info )
+                {
+                    $this->error = $upload->getError();
+                    return FALSE;           
+                }
+                else
+                {
+                    @unlink("./Application/Home/View/Active/{$action}.html");
+                }
+            }
+            else
+            {
+                //没有文件上传 ===> 修改原始文件名
+                @rename("./Application/Home/View/Active/{$action}.html","./Application/Home/View/Active/{$data['action']}.html");
+            }
+
+            //行为改变  没有.rar
+            if( !isset( $_FILES['imgRar'] ) || $_FILES['imgRar']['error'] != 0)
+            {
+                @rename(__UPLOADS__.'Active_img/'.$action,__UPLOADS__.'Active_img/'.$data['action']);
+            }
+        }
+       /************处理图片文件夹************/
+       if( isset( $_FILES['imgRar'] ) && $_FILES['imgRar']['error'] === 0 )
+        {
+            //删除之前解压的文件夹
+            remove_dir(__UPLOADS__.'Active_img/'.$action);
+
+            //实例化上传类
+            $upload = new \Think\Upload();
+            //配置
+            $upload->maxSize = 8*1024*1024;
+            $upload->exts = array('rar');
+            $upload->rootPath = './Public/Uploads/';
+            $upload->savePath = 'Active_img/';
+            $upload->autoSub  = FALSE;
+            $upload->saveName = $data['action'];
+            //上传
+            $info = $upload->uploadOne( $_FILES['imgRar'] );
+
+            //判断--如果上传成功
+            if( !$info )
+            {
+                $this->error = $upload->getError();
+                return FALSE;
+            }
+            //上传成功、解压压缩包
+            UnRar(__UPLOADS__.'Active_img/'.$data['action'].'.rar',__UPLOADS__.'Active_img/',TRUE);
+        }
         /**********上传图片***********/
         if( isset( $_FILES['pic'] ) && $_FILES['pic']['error'] === 0 )
         {
@@ -105,9 +251,14 @@ class ActiveModel extends Model
     protected function _before_delete($options) 
     {
         //获取磁盘图片路径
-        $info = $this->field('pic')->find($options['where']['id']);
+        $info = $this->field('pic,action')->find($options['where']['id']);
 
+        //删除活动图片
         @unlink(__UPLOADS__.$info['pic']);
+        //删除html文件
+        @unlink("./Application/Home/View/Active/{$info['action']}.html");
+        //删除图片文件夹
+        remove_dir(__UPLOADS__.'Active_img/'.$info['action']);
     }    
     // 删除成功后的回调方法
     protected function _after_delete($data,$options) {}
@@ -137,7 +288,7 @@ class ActiveModel extends Model
     	$page = new \Think\Page($count,$pagesize);
     	$pageString = $page->show();
 
-    	$data = $this->field('id,title,pic,object,start_time,end_time,location,join_num,is_top,is_show,status,create_time,price,detial')
+    	$data = $this->field('id,title,pic,start_time,end_time,location,join_num,hospital,action,is_show,status,create_time,price,detial')
     				 ->where($where)
     				 ->limit($page->firstRow.','.$page->listRows)
     				 ->order($desc)

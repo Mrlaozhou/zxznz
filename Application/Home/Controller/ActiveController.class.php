@@ -4,7 +4,7 @@ use Think\Controller;
 
 class ActiveController extends Controller
 {
-	public function lst()
+	public function index()
 	{
 		$model = D('Active');
 		$data = $model->getAct();
