@@ -60,6 +60,7 @@ class IndexController extends Controller {
                     default:
                         // 更新  最新操作时间
                         $model->last_time = time();
+                        $model->where('id='.session('user_id'))->save();
                         //登录成功  跳转
                         $this->success('登录成功！', session('from') );
                 }   

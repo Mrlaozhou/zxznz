@@ -51,11 +51,13 @@ $(document).ready(function()
         
         <div class="top_right">
         <?php if( session('user_id') ):?>
-            <?php echo session('user_name');?>
+            <a href="javascript:;"><?php echo substr(session('user_name'),0,3).'****'.substr(session('user_name'),7);?></a>
+              / 
+            <a href="<?php echo U('Index/outLogin');?>" onclick="return confirm('确定要退出登录吗？');">退出</a>
         <?php else:?>
-            <a href="<?php echo U('login');?>">登录</a>
+            <a href="<?php echo U('Index/login');?>">登录</a>
             　/　
-            <a href="<?php echo U('register');?>">注册</a>
+            <a href="<?php echo U('Index/register');?>">注册</a>
         <?php endif;?>
         </div>
     </div>
@@ -86,7 +88,7 @@ $(document).ready(function()
     	<div class="nav_left">
         	<a href="<?php echo U('Index/index?navNum=1');?>" <?php if( I( 'get.navNum' ) == 1 || !I( 'get.navNum' ) ){ echo "class='hover'"; }?>>首 页</a>
             <a href="<?php echo U('Publish/index?navNum=4');?>" <?php if( I( 'get.navNum' ) == 4 ){ echo "class='hover'"; }?>>前沿发布</a>
-            <a href="<?php echo U('Active/theme1?navNum=6');?>" <?php if( I( 'get.navNum' ) == 6 ){ echo "class='hover'"; }?>>活动专场</a>
+            <a href="<?php echo U('Active/index?navNum=6');?>" <?php if( I( 'get.navNum' ) == 6 ){ echo "class='hover'"; }?>>活动专场</a>
             <a href="<?php echo U('Doctor/index?navNum=2');?>" <?php if( I( 'get.navNum' ) == 2 ){ echo "class='hover'"; }?>>专家库</a>
             <a href="<?php echo U('Hospital/index?navNum=3');?>" <?php if( I( 'get.navNum' ) == 3 ){ echo "class='hover'"; }?>>医院专区</a>
             <a href="<?php echo U('Help/index?navNum=5');?>" <?php if( I( 'get.navNum' ) == 5 ){ echo "class='hover'"; }?>>整形助手</a>

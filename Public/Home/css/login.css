@@ -100,7 +100,8 @@ html,body{
 	border-radius: 6px;
 	font-size: 16px;
 	text-decoration: none;
-	color: #fff;
+	color: white;
+	cursor:pointer;
 }
 .extra-link
 {

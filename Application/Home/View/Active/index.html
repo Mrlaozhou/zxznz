@@ -130,56 +130,32 @@
 			<img src="/Public/Home/images/activity-banner.jpg" alt="">
 		</div>
 		<div class="activity-item-container">
+		<?php foreach($data as $k => $v):?>
 			<!-- activity item -->
 			<div class="activity-item">
 				<div class="activity-item-msg">
 					<div class="date-wrap">
 						<div class="date-desc">
-							<div class="month">03</div>
-							<div class="year">2017 years</div>
+							<div class="month"><?php echo date('m',$v['start_time']);?></div>
+							<div class="year"><?php echo date('Y',$v['start_time']);?> years</div>
 						</div>
 						<div class="date-title">
 							 活动<br>日期
 						</div>
 					</div>
 					<div class="activity-desc">
-						维纳斯整形&海蓝之谜智慧医美品鉴会，武汉首站，E合联盟&整形指南针联合打造<br>全国“100城互联网+智慧医美”机构
+						<?php echo $v['intro'];?>
 					</div>
 					<div class="line-h"></div>
 					<div class="activity-btn">
-						<a href="<?php echo U('threey?navNum=6');?>" title="">查看详情</a>
+						<a href="<?php echo U('Order/despeak?navNum=6&id='.$v['id']);?>" title="">点击预约</a>
 					</div>
 				</div>
 				<div class="activity-item-img">
-					<img src="/Public/Home/images/activity-item-1.jpg" alt="">
+					<a href="<?php echo U($v['action'].'?navNum=6');?>"><img src="/Public/Uploads/<?php echo $v['pic'];?>" alt=""></a>
 				</div>
 			</div>
-
-			<!-- activity item -->
-			<div class="activity-item">
-				<div class="activity-item-msg">
-					<div class="date-wrap">
-						<div class="date-desc">
-							<div class="month">03</div>
-							<div class="year">2017 years</div>
-						</div>
-						<div class="date-title">
-							 活动<br>日期
-						</div>
-					</div>
-					<div class="activity-desc">
-						维纳斯整形&海蓝之谜智慧医美品鉴会，武汉首站，E合联盟&整形指南针联合打造<br>全国“100城互联网+智慧医美”机构
-					</div>
-					<div class="line-h"></div>
-					<div class="activity-btn">
-						<a href="#" title="">查看详情</a>
-					</div>
-				</div>
-				<div class="activity-item-img">
-					<img src="/Public/Home/images/activity-item-2.jpg" alt="">
-				</div>
-			</div>
-
+		<?php endforeach;?>
 		</div>
 	</div>
 

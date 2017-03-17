@@ -476,16 +476,20 @@
 				<div class="product-info">
 					<div class="product-desc">
 						<div class="product-img">
-							<img src="/Public/Home/images/product-img.jpg" alt="产品图片">
+							<img src="/Public/Uploads/<?php echo $info['pic'];?>" alt="产品图片">
 						</div>
 						<div class="product-detail-desc">
-							<p>深层清洁，补水注氧，提亮肤色<br>青春解码是一项能够快速逆转皮肤衰老的皮肤类美容项目</p>
-							<p><a href="javascript:void(0)" title="">上海华美</a></p>
+							<p>
+								<?php echo $info['title'];?>
+								<br>
+								<?php echo $info['intro'];?>
+							</p>
+							<p><a href="javascript:void(0)" title=""><?php echo $info['hospital'];?></a></p>
 						</div>
 					</div>
 					<div class="product-price-desc">
-						<p class="price-now">¥450</p>
-						<p class="price-old">¥3900</p>
+						<p class="price-now">¥<?php echo $info['price'];?></p>
+						<!-- <p class="price-old">¥3900</p> -->
 					</div>
 				</div>
 				<div class="submit-product-info">
@@ -502,10 +506,10 @@
 						</div>
 						<div class="product-price-unit">
 							<div class="info-title">
-								商品金额
+								商品单价
 							</div>
 							<div class="product-price-unit-desc">
-								¥<span id="unit">450</span>
+								¥<span id="unit"><?php echo $info['price'];?></span>
 							</div>
 						</div>
 						<div class="product-price-total">
@@ -513,7 +517,7 @@
 								需支付
 							</div>
 							<div class="product-price-total-desc">
-								 ¥<span id="total">450</span>
+								 ¥<span id="total"><?php echo $info['price'];?></span>
 							</div>
 						</div>
 					</div>
@@ -538,16 +542,20 @@
 				<div class="product-info">
 					<div class="product-desc">
 						<div class="product-img">
-							<img src="/Public/Home/images/product-img.jpg" alt="产品图片">
+							<img src="/Public/Uploads/<?php echo $info['pic'];?>" alt="产品图片">
 						</div>
 						<div class="product-detail-desc">
-							<p>深层清洁，补水注氧，提亮肤色<br>青春解码是一项能够快速逆转皮肤衰老的皮肤类美容项目</p>
-							<p><a href="javascript:void(0)" title="">上海华美</a></p>
+							<p>
+								<?php echo $info['title'];?>
+								<br>
+								<?php echo $info['intro'];?>
+							</p>
+							<p><a href="javascript:void(0)" title=""><?php echo $info['hospital'];?></a></p>
 						</div>
 					</div>
 					<div class="product-price-desc">
-						<p class="price-now">¥450</p>
-						<p class="price-old">¥3900</p>
+						<p class="price-now">¥<?php echo $info['price'];?></p>
+						<!-- <p class="price-old">¥3900</p> -->
 					</div>
 				</div>
 				<div class="content-item-title">
@@ -575,7 +583,7 @@
 							需支付
 						</div>
 						<div class="pay-detail-price">
-							¥450
+							¥<?php echo $info['price'];?>
 						</div>
 					</div>	
 				</div>

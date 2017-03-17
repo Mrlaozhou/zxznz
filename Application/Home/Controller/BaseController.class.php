@@ -14,6 +14,8 @@ class BaseController extends Controller
 		if( $KEY !== 'http://www.z.com')
 		{
 			$this->error('请求不允许！');
+			// echo $KEY;
+			// exit;
 		}
 		//2.判断是否是用户
 		$user_id = session('user_id');
@@ -21,7 +23,7 @@ class BaseController extends Controller
 		if( !$user_id )
 		{
 			//未登录
-			$this->display('Index/login');
+			$this->success('您好，请先登录！',U('Index/login'));
 			exit;	
 		}
 		else
