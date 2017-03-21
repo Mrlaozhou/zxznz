@@ -14,7 +14,7 @@
 		<!-- logo -->
 
 		<div class="margin-center logo">
-			<img src="/Public/Home/images/logo.png" alt="">
+			<a href='/'><img src="/Public/Home/images/logo.png" alt=""></a>
 		</div>
 
 		<!-- Intermediate content area -->
@@ -64,7 +64,7 @@
 $("#username").blur(function(){
 	var phone = $(this).val();
 		$.ajax({
-				url:"http://www.z.com/index.php/Home/Index/checkLoginUser",
+				url:"http://www.zxznz.cn/index.php/Home/Index/checkLoginUser",
 				type:'POST',
 				data:{'phone':phone},
 				dataType:'json',

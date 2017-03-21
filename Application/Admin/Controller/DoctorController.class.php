@@ -127,7 +127,6 @@ class DoctorController extends BaseController
 			echo json_encode(array('result'=>0));
 		}
 	}
-	
 	public function ajaxRefreshDocTop()
 	{
 		if( IS_AJAX )

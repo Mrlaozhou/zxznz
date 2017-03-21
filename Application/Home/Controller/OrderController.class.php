@@ -88,15 +88,27 @@ class OrderController extends BaseController
 	}
 	public function pay()
 	{
+		//dump(I('post.'));
+		//exit;
 		if( IS_POST )
 		{
 			$config = I('post.');
 			if( $config['key'] == session('loginKey') )
 			{
-				//开启支付
-				echo makeAlipayBtn();
-				//支付判断
-				//重定向
+				switch ((int)$config['pay_type']) 
+				{
+					case 1:
+
+						//开启支付
+						echo makeAlipayBtn();
+						//支付判断
+						//重定向
+						break;
+					
+					default:
+						echo 'weixin';
+						break;
+				}
 			}
 			else
 			{
@@ -107,5 +119,24 @@ class OrderController extends BaseController
 		{
 			$this->error('请求不允许！C00011');
 		}
+	}
+	public function receive()
+	{
+		require_once('./Alipay/return_url.php');
+	}
+	public function over()
+	{
+		$id = I('get.orderId');
+		
+		$model = D('Order');
+		$info = $model->field('code,ali_no,create_time,pay_type')
+					  ->find($id);
+		$this->assign(array(
+			'page_title'	=>	'预约成功_智慧医美_整形指南针',
+			'page_desc'		=>	PAGE_DESC,
+
+			'info'			=>	$info,
+		));
+		$this->display();
 	}
 }

@@ -3,8 +3,8 @@ namespace Admin\Model;
 use Think\Model;
 class ActiveModel extends Model
 {
-	public $insertFields = array('title','pic','intro','object','start_time','end_time','location','price','join_num','create_time','is_top','is_show','status','detial');
-    public $updateFields = array('id','title','pic','intro','object','start_time','end_time','location','price','join_num','create_time','is_top','is_show','status','detial');
+	public $insertFields = array('title','pic','intro','object','start_time','end_time','location','price','join_num','create_time','is_top','is_show','status');
+    public $updateFields = array('id','title','pic','intro','object','start_time','end_time','location','price','join_num','create_time','is_top','is_show','status');
 
 	public $_validate = array(
 		array('title','require','活动标题不能为空',1),
@@ -23,8 +23,7 @@ class ActiveModel extends Model
     protected function _before_insert(&$data,$options) 
     {
     	//数据处理
-        $data['object'] = str_replace("，",",",$data['object']);
-    	$data['intro'] = preventTags(trim($data['intro']));
+    	$data['object'] = str_replace("，",",",$data['object']);
     	/**********上传图片***********/
     	if( isset( $_FILES['pic'] ) && $_FILES['pic']['error'] === 0 )
     	{
@@ -46,8 +45,8 @@ class ActiveModel extends Model
 
     			//修改图片尺寸
     			//changeImage($img,$path,$width,$height,$saveName,$type = 6)
-                //$oldPic = $data['pic'];
-                //$data['pic'] = changeImage(__UPLOADS__.$oldPic,__UPLOADS__,550,300,$oldPic);
+                $oldPic = $data['pic'];
+                $data['pic'] = changeImage(__UPLOADS__.$oldPic,__UPLOADS__,550,300,$oldPic);
     		}else
     		{
     			$this->error = $upload->getError();
@@ -63,7 +62,6 @@ class ActiveModel extends Model
     protected function _before_update(&$data,$options) 
     {
         $data['object'] = str_replace("，",",",$data['object']);
-        $data['intro'] = preventTags(trim($data['intro']));
         /**********上传图片***********/
         if( isset( $_FILES['pic'] ) && $_FILES['pic']['error'] === 0 )
         {
@@ -89,8 +87,8 @@ class ActiveModel extends Model
 
                 //修改图片尺寸
                 //changeImage($img,$path,$width,$height,$saveName,$type = 6)
-                // $oldPic = $data['pic'];
-                // $data['pic'] = changeImage(__UPLOADS__.$oldPic,__UPLOADS__,550,300,$oldPic);
+                $oldPic = $data['pic'];
+                $data['pic'] = changeImage(__UPLOADS__.$oldPic,__UPLOADS__,550,300,$oldPic);
             }else
             {
                 $this->error = $upload->getError();
@@ -137,7 +135,7 @@ class ActiveModel extends Model
     	$page = new \Think\Page($count,$pagesize);
     	$pageString = $page->show();
 
-    	$data = $this->field('id,title,pic,object,start_time,end_time,location,join_num,is_top,is_show,status,create_time,price,detial')
+    	$data = $this->field('id,title,pic,object,start_time,end_time,location,join_num,is_top,is_show,status,create_time,price')
     				 ->where($where)
     				 ->limit($page->firstRow.','.$page->listRows)
     				 ->order($desc)

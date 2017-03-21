@@ -59,8 +59,11 @@ class BaseController extends Controller
 				//合并权限
 				$PRI = array_merge($pri,$public);
 				
+				
 				//当前路由
-				$currentPath = MODULE_NAME.'-'.CONTROLLER_NAME.'-'.toLower(ACTION_NAME);
+				$currentPath = MODULE_NAME.'-'.CONTROLLER_NAME.'-'.ACTION_NAME;
+				
+
 				//权限判断
 				if( !in_array($currentPath,$PRI) )
 				{

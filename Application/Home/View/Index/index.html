@@ -1,14 +1,13 @@
 ﻿<?php require_once('/Public/Home/header.html');?>
 
-
-
 <style type="text/css">
+/*
 .js_slide:hover{
     cursor:pointer;
     box-shadow:1px 1px 5px 5px #BBBBBB;
 }
+*/
 </style>
-
 
 <div class="banner">
 	<div class="ban_con">
@@ -40,37 +39,8 @@
             <a href="<?php echo U('Active/lst?navNum=6');?>"><img src="/Public/Home/images/index-active-01.jpg" border="0" /></a>
         </li>
         <li class="hdr">
-            <!--
-            <div style="padding:20px;font-size:16px;">
-                <p style="color:#fe0072;margin-top:0px;">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>2/14 [ 武汉地区 活动专场 ]
-                </p>
-                <p style="">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>3/10 ~ 3/12 [ 北京地区 活动专场 ]
-                </p>
-                <p style="">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>4月 [ 上海地区 活动专场 ]
-                </p>
-                <p style="">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>5月 [ 广州地区 活动专场 ]
-                </p>
+			<a href="<?php echo U('Active/lst?navNum=6');?>"><img src="/Public/Home/images/index-active.jpg" border="0" /></a>
 
-                <p style="">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>6月 [ 广州地区 活动专场 ]
-                </p>
-                <p style="">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>7月 [ 广州地区 活动专场 ]
-                </p>
-                <p style="">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>8月 [ 广州地区 活动专场 ]
-                </p>
-                <p style="color:#fe0072;">
-                    <span style="padding:0 10px;"></span>
-                    [ 更多活动详情官网及官微会实时同步更新... ]
-                </p>                
-            </div>
-            -->
-            <a href="<?php echo U('Active/lst?navNum=6');?>"><img src="/Public/Home/images/index-active.jpg" border="0" /></a>
         </li>
         <div class="clear"></div>
     </div>
@@ -96,29 +66,7 @@
             <a target="_blank" href="<?php echo U('Publish/index?navNum=6');?>"><img src="__PUBLIC__/Home/images/p-i-1.jpg"></a>
         </li>
         <li class="floatR" style="margin-bottom:20px;">
-            <a target="_blank" href="<?php echo U('Publish/index?navNum=6');?>"><img src="__PUBLIC__/Home/images/index-publish.jpg"></a>
-            <!--
-                <p style="color:#fe0072;margin-top:10px;">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>斑点妹诱因盘点你属哪种？
-                </p>
-                <p style="">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>激光祛斑 让皮肤光洁无瑕
-                </p>
-                <p style="">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>祛斑先识别 雀斑和黄褐斑大有不同
-                </p>
-                <p style="">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>微晶磨削祛斑需要多少次治疗？
-                </p>
-                <p style="">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>
-                    E光祛斑美肤原理以及术后护理
-                </p>
-                <p style="color:#fe0072;">
-                    <span style="padding:0 10px;"><img src="__PUBLIC__/Home/images/wenzibiao.jpg"></span>
-                    E光祛斑美肤原理以及术后护理
-                </p> 
-            -->
+                <a target="_blank" href="<?php echo U('Publish/index?navNum=6');?>"><img src="__PUBLIC__/Home/images/index-publish.jpg"></a>
         </li>
         <li class="floatL" style="">
             <a target="_blank" href="<?php echo U('Publish/index?navNum=6');?>"><img src="__PUBLIC__/Home/images/p-i-3.jpg"></a>
@@ -142,9 +90,9 @@
                             <?php foreach($Dinfo as $k => $v):?>
                                 <li class="js_slide" style="position: relative;">
                                     <a target="_blank" href="<?php echo U('Doctor/detial?navNum=2&id='.$v['id'])?>">
-                                        <img style="width:240px;" src="__PUBLIC__/Uploads/<?php echo $v['picture'];?>">
+                                        <img style="width:240px;height:250px;" src="__PUBLIC__/Uploads/<?php echo $v['picture'];?>">
                                     </a>
-                                    <p style="width:240px;height:40px;background: black;position: absolute;bottom:0;left:5px;opacity: .6;text-align: center;line-height: 40px;">
+									<p style="width:240px;height:40px;left:5px;background: black;position: absolute;bottom:0;opacity: .6;text-align: 		center;line-height: 40px;">
                                         <?php echo $v['hos_name'];?> <?php echo $v['name'];?>
                                     </p>
                                 </li>
@@ -156,22 +104,18 @@
                         </span><span class="js_next doc-next">
                             <img style="width:70%;" src="__PUBLIC__/Home/images/slide_right.jpg">
                         </span>
-                        
-
-                        <script type="text/javascript">
+						
+						<script type="text/javascript">
                             $(function(){
                                 $('.slides li').find('p').slideUp('fast');
-                                $('.slides li p').hover(function(){
-                                    $(this).css('display','block');
-                                });
                             })
                            $('.slides li').bind({"mouseover":function(){
                                 $(this).find('p').slideDown('fast');
                            },"mouseout":function(){
                                 $(this).find('p').css('display','none');
                            }});
-
                         </script>
+						
                     </div>
                 </section>
             </div>
@@ -193,9 +137,6 @@
                     ease: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)'
                 });
             });
-
-            /* myself*/
-
         </script>
     </div>
 </div>

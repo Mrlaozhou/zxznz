@@ -12,7 +12,7 @@ class HospitalController extends Controller{
 
 		$this->assign(array(
 			'page_title'	=>	'医院专区_智慧医美_整形指南针',
-			'page_desc'		=>	'e折整形 全国抢购',
+			'page_desc'		=>	PAGE_DESC,
 
 			'data'			=>	$data,
 			));
@@ -62,7 +62,7 @@ class HospitalController extends Controller{
 		/**********评论信息 end************/
 		$this->assign(array(
 			'page_title'	=>	$info['name'].'_医院详情页_智慧医美_整形指南针',
-			'page_desc'		=>	'e折整形 全国抢购',
+			'page_desc'		=>	PAGE_DESC,
 			'page_key'		=>	$info['name'],
 
 			'info'			=>	$info,
@@ -80,11 +80,11 @@ class HospitalController extends Controller{
 				if( $id )
 				{
 					$model = D('Admin/Hospital');
-
+	
 					$info = $model->field('like')->find($id);
 					$like = (int)$info['like']+1;
 					$sql = "UPDATE zxznz_hospital SET `like`='{$like}' WHERE `id`={$id}";
-
+	
 					if( $model->execute($sql) !== FALSE )
 					{
 						echo json_encode(array(
@@ -104,7 +104,7 @@ class HospitalController extends Controller{
 					echo json_encode(array(
 						'result'	=>	FALSE,
 						));
-				}
+				}				
 			}
 			else
 			{

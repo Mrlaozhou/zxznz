@@ -6,4 +6,8 @@ class PhoneController
 	{
 		header("Access-Control-Allow-Origin:*");
 	}
+	public function index()
+	{
+		echo 'haha';
+	}
 }

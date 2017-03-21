@@ -24,6 +24,7 @@ class ActiveModel extends Model
     {
     	//数据处理
     	$data['intro'] = preventTags(trim($data['intro']));
+		//$data['intro'] = trim($data['intro']);
         /**********上传页面***********/
         if( isset( $_FILES['html'] ) && $_FILES['html']['error'] === 0 )
         {       
@@ -61,6 +62,7 @@ class ActiveModel extends Model
             $upload->savePath = 'Active_img/';
             $upload->autoSub  = FALSE;
             $upload->saveName = $data['action'];
+            $upload->replace = TRUE;
             //上传
             $info = $upload->uploadOne( $_FILES['imgRar'] );
 
@@ -107,6 +109,7 @@ class ActiveModel extends Model
     protected function _before_update(&$data,$options) 
     {
         $data['intro'] = preventTags(trim($data['intro']));
+		//$data['intro'] = trim($data['intro']);
         /************处理页面************/
         //判断行为是否该变
         $info = $this->field('action')

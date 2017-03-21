@@ -134,7 +134,7 @@ html,body
 	}
 	.pay-info-desc
 	{
-		width: 340px;
+		width: 450px;
 		margin: 0 auto;
 		line-height: 40px;
 	}
@@ -149,7 +149,7 @@ html,body
 	{
 		display: inline-block;
 		color: #000;
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.pay-step-item
 	{
@@ -163,7 +163,7 @@ html,body
 <body>
 	<div class="pay-container">
 		<div class="pay-step-guide">
-			<div class="step-guide-item active">
+			<div class="step-guide-item">
 				<div class="guide-msg">
 					提交预约
 				</div>
@@ -179,7 +179,7 @@ html,body
 					<span>2</span>
 				</div>
 			</div>
-			<div class="step-guide-item">
+			<div class="step-guide-item active">
 				<div class="guide-msg">
 					完成订单
 				</div>
@@ -199,12 +199,44 @@ html,body
 					订单支付成功
 				</div>
 				<div class="back-btn">
-					<a href="#" title="">返回首页</a>
+					<a href="<?php echo U('/');?>" title="">返回首页</a>
 				</div>
 				<div class="pay-info-desc">
-					<p><span class="info-title">订单编号:</span><span class="info-detail">123456782342342342</span></p>
-					<p><span class="info-title">交易方式:</span><span class="info-detail">支付宝支付</span></p>
-					<p><span class="info-title">下单时间:</span><span class="info-detail">2017.3.15 11:48</span></p>
+					<p>
+						<span class="info-title">订单编号:</span>
+						<span class="info-detail"><?php echo $info['code'];?></span>
+					</p>
+					<p>
+						<span class="info-title">交易编号:</span>
+						<span class="info-detail"><?php echo $info['ali_no'];?></span>
+					</p>
+					<p><span class="info-title">
+						交易方式:
+					   </span>
+					   <span class="info-detail">
+					   <?php 
+					   		switch ( $info['pay_type'] )
+							{
+								case 1:
+									echo '支付宝支付';
+									break;
+								case 2:
+									echo '微信支付';
+									break;
+								case 3:
+									echo '现金支付';
+									break;
+								defualt:
+									echo '其他';
+									break;
+							}
+					   ?>
+					   </span>
+					 </p>
+					<p>
+						<span class="info-title">下单时间:</span>
+						<span class="info-detail"><?php echo date('Y-m-d H:i:s',$info['create_time']);?></span>
+					</p>
 				</div>
 			</div>
 			<!-- step 3 -->

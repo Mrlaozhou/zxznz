@@ -183,7 +183,7 @@ class AdminModel extends Model
 		//数据处理
 		foreach($data as $k => $v)
 		{
-			$result[$v['pri_name']] = $v['module_name'].'-'.$v['controller_name'].'-'.tolower($v['action_name']);
+			$result[$v['pri_name']] = $v['module_name'].'-'.$v['controller_name'].'-'.toLower($v['action_name']);
 		}	
 
 		return $result;

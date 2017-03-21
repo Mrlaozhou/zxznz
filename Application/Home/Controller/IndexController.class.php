@@ -9,6 +9,7 @@ class IndexController extends Controller {
 
         //doctor
         $Dinfo = $model->getDoc();
+
         
         //hospital
         $Hinfo = $model->getHos();
@@ -16,7 +17,7 @@ class IndexController extends Controller {
 
         $this->assign(array(
             'page_title' => '智慧医美_整形指南针',
-            'page_desc'  => 'e折整形 全国抢购',
+            'page_desc'  => PAGE_DESC,
 
             'Dinfo'      => $Dinfo,
             'Hinfo'      => $Hinfo,
@@ -28,7 +29,7 @@ class IndexController extends Controller {
     {
         $this->assign(array(
             'page_title' => '关于我们_智慧医美_整形指南针',
-            'page_desc'  => 'e折整形 全国抢购',
+            'page_desc'  => PAGE_DESC,
             ));
         $this->display();
     }
@@ -563,7 +564,6 @@ class IndexController extends Controller {
            )); 
         }
     }
-
     /***************///3.14 登录--检验用户名是否存在
     public function checkLoginUser()
     {
@@ -592,5 +592,4 @@ class IndexController extends Controller {
             }
         }
     }
-
 }

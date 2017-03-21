@@ -334,7 +334,7 @@
 							<p>
 								<?php echo $info['title'];?>
 								<br>
-								<?php echo $info['intro'];?>
+								<?php echo htmlspecialchars_decode($info['intro']);?>
 							</p>
 							<p>
 								<a href="javascript:void(0)" title="">
@@ -382,7 +382,7 @@
 					</div>
 				</div>
 				<div class="pay-btn">
-					<input type="submit" id='payment' value="去支付">
+					<input type="submit" id='payment' value="创建订单">
 					<input type="hidden" name="active_id" value="<?php echo $info['id'];?>">
 				</div>
 			</div>

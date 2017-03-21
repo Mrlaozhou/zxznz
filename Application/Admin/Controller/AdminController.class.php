@@ -31,7 +31,6 @@ class AdminController extends BaseController
 			{
 				if ( $model->add() )
 				{
-					flushMemcache();
 					$this->success('创建管理员成功！',U('lst'));
 					exit;
 				}

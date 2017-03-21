@@ -39,7 +39,7 @@ class NavController extends BaseController
 			}
 			else
 			{
-				$this->error('导航栏添加失败！！！');
+				$this->error($model->getError());
 			}
 
 		}

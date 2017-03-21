@@ -171,7 +171,7 @@ $("select[name=province]").change(function(){
 	var html = '';
 	$.ajax({
 		type : "GET",
-		url : "<?php echo U('ajaxGetCitys', '', FALSE); ?>/province/"+province,
+		url : "/index.php/Admin/Hospital/ajaxGetCitys/province/"+province,
 		dataType : "json",
 		success : function(data)
 		{
@@ -197,7 +197,7 @@ function onloadAjax()
 	{
 		$.ajax({
 			type : "GET",
-			url : "<?php echo U('ajaxGetCitys', '', FALSE); ?>/province/"+province,
+			url : "/index.php/Admin/Hospital/ajaxGetCitys/province/"+province,
 			dataType : "json",
 			success : function(data)
 			{

@@ -26,8 +26,6 @@ class IndexModel
         return array_chunk($Hinfo,5);
 	}
 
-
-    /*2.22日  更改需求为自动更新*/
 	public function getDoc($size = 2)
 	{
 		$doctor = D('Admin/Doctor');
@@ -36,19 +34,17 @@ class IndexModel
         				->field('d.id,d.name,d.picture,(h.name)hos_name')
                         ->where(array(
                             'd.is_show'   =>  array('eq','是'), 
-                            // 'h.is_show'   =>  array('eq','1'),    //所属医院是否显示
-                            // 'd.is_index'	=>	array('eq','1'),
+                            'h.is_show'   =>  array('eq','1'),    //所属医院是否显示
+                            //'d.is_index'	=>	array('eq','1'),
                             ))
                         ->limit($size*4)
-                        // ->order('d.is_top desc')
-                        ->order('d.id desc')
+                        //->order('d.is_top desc')
+						->order('d.id desc')
                         ->select();
-
+        
         return $Dinfo;
 	}
-
-
-    /*********/
+	/*********/
     public function rExists($config)
     {
         

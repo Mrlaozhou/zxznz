@@ -18,6 +18,14 @@
 	    <form method="post" action="__SELF__" enctype="multipart/form-data" >
 	    	<!-- 基本信息 -->
 	        <table class="tab_content" cellspacing="1" cellpadding="3" width="100%">
+				<tr>
+	        		<td class="label">注意：</td>
+	        		<td style="color:blue;">
+	        			行为、图片压缩文件夹 必须命名一致
+	        			<br />
+	        			<span style="color:red;">例：行为 action   压缩包 action.rar</span>
+	        		</td>
+	        	</tr>
 	            <tr>
 	                <td class="label">发布标题</td>
 	                <td>
@@ -39,7 +47,7 @@
 	                <td class="label">上传页面</td>
 	                <td>
 	                    <input type="file" name="html" />
-	                    <span class="require-field">*</span>
+	                    <span class="require-field">*.html</span>
 	                    <br /><br />
 	                </td>
 	            </tr>
@@ -55,7 +63,7 @@
 	                <td class="label">上传图片压缩包</td>
 	                <td>
 	                    <input type="file" name="imgRar" />
-	                    <span class="require-field">*</span>
+	                    <span class="require-field">*.rar</span>
 	                    <br /><br />
 	                </td>
 	            </tr>

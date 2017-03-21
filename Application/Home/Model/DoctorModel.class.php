@@ -34,7 +34,7 @@ class DoctorModel
 								'h.is_show'	=>	array('eq','1'),
 							  	))
 							  ->limit($page->firstRow.','.$page->listRows)
-							  ->order('id')
+							  ->order('id desc')
 							  ->select();
 
 		return array(

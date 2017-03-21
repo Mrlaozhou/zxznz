@@ -84,11 +84,12 @@ class ActiveController extends BaseController
 		$model = D('Active');
 		if( IS_POST )
 		{
-			// dump(I('post.'));
-			// exit;
+			//dump(I('post.'));
 			if( $model->create( I('post.'),2 ) )
 			{
-				if( $model->save() )
+				//dump($model->create( I('post.'),2 ));
+				//exit;
+				if( $model->save() !== FALSE )
 				{
 					$this->success( '修改活动成功！',U('lst') );
 					exit;
@@ -110,7 +111,7 @@ class ActiveController extends BaseController
 			$id = I('get.id');
 			$info = $model->field('id,title,pic,object,start_time,end_time,location,join_num,is_top,is_show,status,create_time,intro,price,detial')
 						  ->find( $id );
-
+			//dump($info);
  			$this->assign(array(
 			'_page_title'		=>	'修改活动',
 			'_page_btn_link'	=>	U('lst'),

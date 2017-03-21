@@ -9,12 +9,8 @@ class SponsorController extends Controller
 	{
 		$this->assign(array(
 			'page_title'	=>	'战略合作_智慧医美_整形指南针',
-			'page_desc'	=>	'e折整形 全国抢购',
+			'page_desc'		=>	PAGE_DESC,
 			));
 		$this->display();
-	}
-	public function add()
-	{
-		
 	}
 }

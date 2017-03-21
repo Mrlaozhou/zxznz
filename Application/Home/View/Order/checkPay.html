@@ -322,7 +322,7 @@
 							<p>
 								<?php echo $info['title'];?>
 								<br>
-								<?php echo $info['intro'];?>
+								<?php echo htmlspecialchars_decode($info['intro']);?>
 							</p>
 							<p>
 								<a href="javascript:void(0)" title="">
@@ -344,15 +344,15 @@
 						微信支付／支付宝
 					</div>
 					<div class="pay-mode-content">
-						<div class="pay-mode-wechat">
-							<input type="radio" name="mode">
-							<input type="hidden" name="">
-							<span class="pay-mode-img"><img src="/Public/Home/images/pay-mode-wechat.jpg" alt=""></span>
-						</div>
 						<div class="pay-mode-alipay">
-							<input type="radio" name="mode" checked>
+							<input type="radio" name="pay_type" value='1' checked='checked'>
 							<input type="hidden" name="">
 							<span class="pay-mode-img"><img src="/Public/Home/images/pay-mode-alipay.jpg" alt=""></span>
+						</div>
+						<div class="pay-mode-wechat">
+							<input type="radio" name="pay_type" value='2'>
+							<input type="hidden" >
+							<span class="pay-mode-img"><img src="/Public/Home/images/pay-mode-wechat.jpg" alt=""></span>
 						</div>
 					</div>
 				</div>
@@ -370,9 +370,10 @@
 				<div class="pay-btn">
 					<input id="payment-2" type="submit" value="支付">
 					<input type="hidden" name="key" value="<?php echo session('loginKey');?>">
-					<input type="hidden" name="need_pay" value="<?php echo $info['need_pay'];?>">
 					<input type="hidden" name="order_id" value="<?php echo $info['id'];?>">
-					<input type="hidden" name="code" value="<?php echo $info['code'];?>">
+					<input type="hidden" name="WIDtotal_fee" value="<?php echo $info['need_pay'];?>">
+					<input type="hidden" name="WIDout_trade_no" value="<?php echo $info['id'];?>">
+					<input type="hidden" name="WIDsubject" value="<?php echo $info['title'];?>">
 				</div>
 			</div>
 			<!-- step 2 -->

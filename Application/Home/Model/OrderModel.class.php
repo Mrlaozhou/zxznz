@@ -4,7 +4,7 @@ use Think\Model;
 class OrderModel extends Model
 {
 	public $insertFields = array('code','from','status','user_id','active_id','create_time','need_pay','count','price');
-	public $UploadFields = array('id','from','status','user_id','active_id','create_time','need_pay','count','cancel_time','pay_time','true_pay','pay_time');
+	public $UploadFields = array('id','from','status','user_id','active_id','create_time','need_pay','count','cancel_time','pay_time','true_pay','pay_time','ali_no');
 	//定义生成订单是的验证
 	public $order_validate = array(
 		//array('code','require','没有生成订单编号'),
@@ -23,7 +23,7 @@ class OrderModel extends Model
     		$this->error('订单信息有误！00001');
     		return FALSE;
     	}
-    	$singlePrice = (int)$actInfo['price'];
+    	$singlePrice = $actInfo['price'];
 
     	//生成需付
     	$data['need_pay'] 		= (int)$data['count']*$singlePrice;
