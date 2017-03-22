@@ -4,37 +4,46 @@
     <form action="<?php echo U('big'); ?>" name="searchForm" method="post">
     	来源渠道：
     				<select name="from">
-                        <option value="">请选择渠道</option>
+                        <option value="">所有</option>
                         <option value="1">PC端</option>
                         <option value="2">移动端</option>
                     	<option value="3">其它</option>
                     </select>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	    订单状态：  <select name="status">
-                        <option value="">请选择状态</option>
-                        <option value="1">未支付 挂起</option>
+                        <option value="">所有</option>
+                        <option value="1">未支付</option>
                         <option value="2">已支付</option>
                         <option value="7">已取消</option>
                     </select>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	    付款方式：  <select name="pay_type">
-                        <option value="">请选择方式</option>
+                        <option value="">所有</option>
                         <option value="1">支付宝</option>
                         <option value="2">微信</option>
                         <option value="3">现金</option>
                         <option value="4">其它</option>
                     </select>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
-        用户名 ：<input type="text" name='username'>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         活动名称：   <select name="active">
-                        <option value="">请选择活动</option>
+                        <option value="">所有</option>
                     <?php foreach($active as $k=>$v):?>
                         <option value="<?php echo $v['id']?>">
                             <?php echo $v['title'];?>
                         </option>
                     <?php endforeach;?>
-                    </select>         
+                    </select> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
+        时间搜索: 创建订单时间  
+                    <script language="javascript" type="text/javascript" src="__PUBLIC__/date/WdatePicker.js"></script>
+                    <input class="Wdate" type="text" name="start" onClick="WdatePicker()">
+                     — 
+                    <input class="Wdate" type="text" name="end" onClick="WdatePicker()">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
+        用户名 ：   <input type="text" size="13" name='username'>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        订单编号：  <input type="text" name="code" size='30' />
+                
     <input id="search" type="button" value=" 搜索 " class="button" />
     </form>
 </div>
@@ -115,7 +124,7 @@ function getData()
                             style = "background:#ccc;";
                         }
                         html += "<tr style='"+style+"'>";
-                        html += "   <td align='center'>"+v.id+"</td>";
+                        html += "   <td align='center'>"+k+"</td>";
                         html += "   <td align='center'>"+v.username+"</td>";
                         html += "   <td align='center'>"+v.active_name+"</td>";
                         html += "   <td align='center'>"+v.code+"</td>";
@@ -137,11 +146,11 @@ function getData()
             {
                 html="<tr><td colspan='14'><span style='color:red;'>无数据...</span></td></tr>";
             }
-            var tr1 = "<tr><th>id</th><th>用户名</th><th>活动名称</th><th>订单编号</th><th>订单状态</th><th>付款方式</th><th>来源渠道</th><th>创建时间</th><th>取消时间</th><th>付款时间</th><th>需付款</th><th>实付款</th><th>数量</th><th>单价</th></tr>";
+            var tr1 = "<tr><th>序号</th><th>用户名</th><th>活动名称</th><th>订单编号</th><th>订单状态</th><th>付款方式</th><th>来源渠道</th><th>创建时间</th><th>取消时间</th><th>付款时间</th><th>需付款</th><th>实付款</th><th>数量</th><th>单价</th></tr>";
             html = tr1+html;
 
             $(show).html(html);
-            console.log(html);
+            console.log(data.sql);
         }
     })
 };

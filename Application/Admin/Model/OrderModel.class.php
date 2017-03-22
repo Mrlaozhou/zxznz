@@ -24,27 +24,67 @@ class OrderModel extends Model
 
 		if( $config )
 		{
-			//用户名搜索
+			/*订单编号搜索*/
+			if( isset($config['code']) )
+			{
+				//订单编码规则：base64_encode(user_id+active_id+time+count+need_pay+from);
+				$code = trim($config['code']);
+				$where['o.code'] = array('eq',$code);
+				unset($config);
+			}
+			/*用户名搜索*/
 			if( isset($config['username']) )
 			{
-				
 				$where['u.username'] = array('eq',$config['username']);
 				unset($config['username']);
 			}
-			//活动搜索
+			/*活动搜索*/
 			if( isset($config['active']) )
 			{
 				$where['o.active_id'] = array('eq',$config['active']);
 				unset($config['active']);
 			}
-
-			foreach( $config as $k => $v )
+			/*时间搜索*/
+			if( isset($config['start']) || isset($config['end']) )
 			{
-				$where['o.'.$k] = array('eq',$v);
+				//不存在开始值
+				if( !isset($config['start']) )
+				{
+					$where['o.create_time'] = array('elt',strtotime($config['end'])+60*60*24);
+					unset($config['end']);	
+				}
+				//不存在结束值
+				elseif( !isset($config['end']) )
+				{
+					$where['o.create_time'] = array('egt',strtotime($config['start']));
+					unset($config['start']);	
+				}
+				else
+				{
+					if( strtotime($config['end']) > strtotime($config['start']) )
+					{
+						$where['o.create_time'] = array('BETWEEN',array(strtotime($config['start']),strtotime($config['end'])+60*60*24));	
+					}
+					elseif( strtotime($config['end']) == strtotime($config['start']) )
+					{
+						$where['o.create_time'] = array('BETWEEN',array(strtotime($config['start']),strtotime($config['start'])+60*60*24));
+					}
+					else
+					{
+						$where['o.create_time'] = array('eq','-1');
+					}
+					unset($config['start']);
+					unset($config['end']);
+				}
 			}
 
-			// dump($where);
-			// exit;
+			if( $config )
+			{
+				foreach( $config as $k => $v )
+				{
+					$where['o.'.$k] = array('eq',$v);
+				}	
+			}
 		}
 		else
 		{
@@ -52,7 +92,7 @@ class OrderModel extends Model
 		}
 
 		$data = $this->alias('o')
-					 ->field('o.id,o.code,o.from,o.status,o.user_id,o.active_id,o.create_time,o.cancel_time,o.pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name')
+					 ->field("o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name")
 					 ->join('LEFT JOIN zxznz_user u ON u.id = o.user_id')
 					 ->join('LEFT JOIN zxznz_active a ON a.id = o.active_id')
 					 ->where($where)
