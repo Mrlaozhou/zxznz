@@ -1,16 +1,20 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
+use Home\Controller\DataController;
 
-class DoctorController extends Controller
+class DoctorController extends DataController
 {
 
 	public function index()
 	{
+		// dump(session('province'));
+		// exit;
+	
 		$model = D('Home/Doctor');
-		$data = $model->search();
-		// Z($data);
 
+		$data = $model->search();	
+
+		
 		$this->assign(array(
 			'page_title'	=>	'专家库_智慧医美_整形指南针',
 			'page_desc'		=>	PAGE_DESC,

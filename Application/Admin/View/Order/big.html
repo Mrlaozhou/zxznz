@@ -7,7 +7,8 @@
                         <option value="">所有</option>
                         <option value="1">PC端</option>
                         <option value="2">移动端</option>
-                    	<option value="3">其它</option>
+                        <option value="3">公众号</option>
+                    	<option value="4">其他</option>
                     </select>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	    订单状态：  <select name="status">
@@ -21,8 +22,9 @@
                         <option value="">所有</option>
                         <option value="1">支付宝</option>
                         <option value="2">微信</option>
-                        <option value="3">现金</option>
-                        <option value="4">其它</option>
+                        <option value="3">公众号</option>
+                        <option value="4">现金</option>
+                        <option value="5">其它</option>
                     </select>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         活动名称：   <select name="active">
@@ -63,7 +65,7 @@ function getData()
     var html = '';
     var show = document.getElementById('showTable');      
     $.ajax({
-        url:'http://www.z.com/index.php/Admin/Order/search',
+        url:'/index.php/Admin/Order/search',
         type:'POST',
         data:val,
         dataType:'JSON',
@@ -101,10 +103,13 @@ function getData()
                                 pay_type="<span style='color:green;'>微信</span>";
                                 break;
                             case '3':
-                                pay_type="<span style='color:#C40000;'>现金</span>";
+                                pay_type="<span style='color:#C40000;'>公众号</span>";
                                 break;
                             case '4':
-                                pay_type="<span style='color:black;'>其它</span>";
+                                pay_type="<span style='color:red;'>现金</span>";
+                                break;
+                            case '5':
+                                pay_type="<span style='color:yellow;'>其它</span>";
                                 break;
                         }
                         switch (v.from) 
@@ -116,6 +121,9 @@ function getData()
                                 from="<span style='color:red;'>移动端</span>";
                                 break;
                             case '3':
+                                from="<span style='color:#C40000;'>公众号</span>";
+                                break;
+                            case '4':
                                 from="<span style='color:black;'>其它</span>";
                                 break;
                         }
@@ -124,7 +132,7 @@ function getData()
                             style = "background:#ccc;";
                         }
                         html += "<tr style='"+style+"'>";
-                        html += "   <td align='center'>"+k+"</td>";
+                        html += "   <td align='center'>"+(k+1)+"</td>";
                         html += "   <td align='center'>"+v.username+"</td>";
                         html += "   <td align='center'>"+v.active_name+"</td>";
                         html += "   <td align='center'>"+v.code+"</td>";

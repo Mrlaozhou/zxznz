@@ -1,8 +1,8 @@
 <?php 
 namespace Home\Controller;
-use Think\Controller;
+use Home\Controller\DataController;
 
-class HospitalController extends Controller{
+class HospitalController extends DataController{
 	public function index()
 	{
 		//

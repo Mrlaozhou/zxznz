@@ -1,0 +1,1800 @@
+[ 2017-03-23T01:03:05+08:00 ] 183.61.51.206 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T06:45:39+08:00 ] 222.167.92.17 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T07:42:04+08:00 ] 122.192.14.154 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T08:42:56+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T08:42:59+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T08:43:10+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T08:43:18+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T08:46:40+08:00 ] 115.237.214.116 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T08:46:47+08:00 ] 115.237.214.116 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T09:05:54+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T09:05:54+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T09:05:55+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T09:05:55+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:02:30+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:02:31+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:03:36+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:03:45+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:03:46+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:03:52+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:11:40+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:20:13+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:20:28+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:20:33+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:20:40+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:20:58+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:06:49+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:07:43+08:00 ] 117.136.79.161 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:08:12+08:00 ] 117.136.79.161 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:08:32+08:00 ] 117.136.79.161 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.015625s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.015624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:12:06+08:00 ] 140.207.23.138 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015625s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:16:05+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015625s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:16:16+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:54:18+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T12:07:09+08:00 ] 175.137.174.185 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T12:25:59+08:00 ] 111.206.36.9 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T12:56:00+08:00 ] 42.120.160.78 /index.php/home/css/global.css
+ERR: 无法加载控制器:Css
+
+[ 2017-03-23T14:23:20+08:00 ] 180.173.90.235 /index.php/AdmiN
+ERR: 无法加载控制器:Index
+
+[ 2017-03-23T14:23:21+08:00 ] 180.173.90.235 /index.php/AdmiN
+ERR: 无法加载控制器:Index
+
+[ 2017-03-23T14:23:22+08:00 ] 180.173.90.235 /index.php/AdmiN
+ERR: 无法加载控制器:Index
+
+[ 2017-03-23T14:23:23+08:00 ] 180.173.90.235 /index.php/AdmiN
+ERR: 无法加载控制器:Index
+
+[ 2017-03-23T14:23:24+08:00 ] 180.173.90.235 /index.php/AdmiN
+ERR: 无法加载控制器:Index
+
+[ 2017-03-23T14:23:25+08:00 ] 180.173.90.235 /index.php/AdmiN
+ERR: 无法加载控制器:Index
+
+[ 2017-03-23T14:23:27+08:00 ] 180.173.90.235 /index.php/AdmiN
+ERR: 无法加载控制器:Index
+
+[ 2017-03-23T14:23:28+08:00 ] 180.173.90.235 /index.php/AdmiN
+ERR: 无法加载控制器:Index
+
+[ 2017-03-23T14:24:05+08:00 ] 180.173.90.235 /index.php/admin/active/ajaxgetcitys/province/undefined
+ERR: 非法操作:ajaxgetcitys
+
+[ 2017-03-23T14:30:30+08:00 ] 42.236.10.77 /index.php/home/active/theme/navNum/6.html
+ERR: 非法操作:theme
+
+[ 2017-03-23T16:03:40+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:03:46+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015624s ]
+
+[ 2017-03-23T16:03:55+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015624s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:32:19+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015624s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015625s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:32:23+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:33:06+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:33:17+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:33:43+08:00 ] 180.173.90.235 /index.php/admin/doctor/ajaxgetcitys/province/undefined
+ERR: 非法操作:ajaxgetcitys
+
+[ 2017-03-23T16:34:02+08:00 ] 180.173.90.235 /index.php/admin/doctor/ajaxgetcitys/province/undefined
+ERR: 非法操作:ajaxgetcitys
+
+[ 2017-03-23T16:34:11+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:35:09+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:35:22+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:35:26+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:35:37+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:37:01+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:37:06+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:38:53+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-23T16:41:34+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:42:12+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:44:10+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:44:24+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:44:26+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015624s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.015624s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:44:38+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015624s ]
+
+[ 2017-03-23T16:44:42+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:44:46+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:49:36+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015625s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:51:33+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:54:04+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:55:30+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:02:39+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:02:49+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:02:55+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:03:14+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:03:16+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 8,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:03:17+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 16,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:03:17+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 24,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:03:18+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 32,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:03:19+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 40,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:03:56+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:04:00+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:05:08+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:08:26+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:09:32+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:09:46+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:09:47+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:09:55+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:11:39+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:11:41+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 8,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:11:42+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 16,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:11:42+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 24,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:11:53+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015624s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:13:21+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 8,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:13:22+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.015624s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 24,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:13:22+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015624s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 16,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:13:23+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015624s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 40,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:13:23+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 32,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:13:24+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 48,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:13:54+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:17:13+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:18:56+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:18:58+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:19:07+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:19:27+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:19:42+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015624s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:20:09+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015624s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:20:17+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` WHERE ( `id` = 53 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:20:40+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:20:40+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 8,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:26:09+08:00 ] 211.103.82.163 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:29:53+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:30:21+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:31:45+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015624s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:33:03+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:33:17+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.015624s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:33:54+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:34:07+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:36:21+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.015624s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:36:33+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:39:59+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:41:07+08:00 ] 211.103.82.163 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:41:10+08:00 ] 211.103.82.163 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 8,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:42:08+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:47:31+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015624s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:48:16+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:48:51+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:48:53+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` WHERE ( `id` = 53 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:49:46+08:00 ] 180.159.193.86 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:52:53+08:00 ] 180.173.90.235 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:54:49+08:00 ] 180.173.90.235 /api.php/api/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) ORDER BY is_top desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:54:52+08:00 ] 180.173.90.235 /api.php/api/Hospital/detial
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`tel`,`address`,`logo`,`intro`,`like` FROM `zxznz_hospital` WHERE ( `id` = 256 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

@@ -44,6 +44,41 @@ class IndexModel
         
         return $Dinfo;
 	}
+	
+	public function getPerson()
+    {
+        $userId = session('user_id');
+
+        $data = array();
+        //实例化用户模型
+        $userModel = M('User');
+        $data['person'] = $userModel->field('username,alias,last_time')
+                                    ->find($userId);
+        //实例化订单类
+        $orderModel = M('Order');
+        $orders = $orderModel->alias('o')
+                             ->field('o.id,o.status,o.code,o.active_id,o.create_time,o.need_pay,o.true_pay,o.count,a.title,a.pic,a.intro,a.hospital')
+                             ->join('LEFT JOIN zxznz_active a ON o.active_id = a.id')
+                             ->where(array(
+                                'o.user_id' =>  array('eq',$userId),
+                                'o.status'  =>  array('in',array('1','2')),
+                                ))
+                             ->order('id desc')
+                             ->select();
+        //处理数据
+        foreach( $orders as $k => $v )
+        {
+            if($v['status'] == '1')
+                $data['no'][] = $v ;
+            else
+                $data['yes'][] = $v ;
+            unset($order[$k]);
+        }
+
+        return $data;
+    }
+
+	
 	/*********/
     public function rExists($config)
     {

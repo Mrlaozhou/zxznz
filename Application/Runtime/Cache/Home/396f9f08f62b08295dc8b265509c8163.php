@@ -1,5 +1,5 @@
-
-<?php require_once('__PUBLIC__/Home/header.html');?>
+<?php if (!defined('THINK_PATH')) exit();?>
+<?php require_once('/Public/Home/header.html');?>
 
 <style type="text/css">
 
@@ -102,4 +102,4 @@
         </div>
     </div>
 
-<?php require_once('__PUBLIC__/Home/footer.html');?>
+<?php require_once('/Public/Home/footer.html');?>

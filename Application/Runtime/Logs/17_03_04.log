@@ -1,0 +1,105 @@
+[ 2017-03-04T23:36:15+08:00 ] 42.236.49.72 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'æ˜¯' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\ÐÂÉçÇø\ZXZNZ\Public\Home\header.html ç¬¬ 6 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 169 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 188 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 205 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 224 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 241 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 169 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 188 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 205 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 224 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 241 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-04T23:47:18+08:00 ] 123.125.71.76 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'æ˜¯' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\ÐÂÉçÇø\ZXZNZ\Public\Home\header.html ç¬¬ 6 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 169 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 188 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 205 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 224 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 241 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 169 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 188 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 205 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 224 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 241 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-04T23:57:44+08:00 ] 220.181.108.84 /index.php/Home/Index/index/navNum/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'æ˜¯' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\ÐÂÉçÇø\ZXZNZ\Public\Home\header.html ç¬¬ 6 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 169 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 188 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 205 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 224 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 241 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 169 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 188 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 205 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 224 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\ÐÂÉçÇø\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 241 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

@@ -12,6 +12,7 @@ class IndexController extends PhoneController
 	{
 		if( 1 )
 		{
+			header("Content-Type:text/html;charset=gb2312");
 			/*********实例化模型********/
 			
 			//实例化医生信息
@@ -24,9 +25,8 @@ class IndexController extends PhoneController
         					 ->join("LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id")
         				     ->field('d.id,d.name,d.picture,(h.name)hos_name')
                              ->where(array(
-                            	 
+							 	//'d.is_show'	  =>  array('eq','是'),
                             	'h.is_show'   =>  array('eq','1'),    //所属医院是否显示
-                           		
                             		))
                         	->limit(12)
 							->order('d.id desc')

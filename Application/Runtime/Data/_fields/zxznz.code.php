@@ -1,0 +1,1 @@
+a:5:{i:0;s:6:"mobile";i:1;s:4:"code";i:2;s:4:"time";s:3:"_pk";s:6:"mobile";s:5:"_type";a:3:{s:6:"mobile";s:11:"varchar(11)";s:4:"code";s:15:"int(4) unsigned";s:4:"time";s:12:"varchar(255)";}}

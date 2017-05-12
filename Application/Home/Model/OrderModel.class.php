@@ -38,7 +38,7 @@ class OrderModel extends Model
     	$data['status']	  		= '1';					//0.无状态1.未付款挂起2.已付款7.取消
     	//生成时间
     	$data['create_time']	= time();
-    	//生成订单                         //订单编码规则：md5(user_id+active_id+time+count+from);
+    	//生成订单                         //订单编码规则：base64_encode(user_id+active_id+time+count+need_pay+from);
     	$data['code'] 	   		= base64_encode(trim(session('user_id')).'-'.
                                                 trim($data['active_id']).'-'.
                                                 trim($data['create_time']).'-'.

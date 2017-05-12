@@ -1,0 +1,2323 @@
+[ 2017-03-21T10:44:03+08:00 ] 180.173.90.235 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:06+08:00 ] 180.173.90.235 /index.php/Home/Active/index/navNum/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`pic`,`intro`,`action`,`start_time`,`end_time`,`location`,`price`,`join_num` FROM `zxznz_active` WHERE ( `is_show` = '1' ) ORDER BY start_time  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:08+08:00 ] 180.173.90.235 /index.php/Home/Order/despeak/navNum/6/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`pic`,`intro`,`start_time`,`end_time`,`location`,`price`,`hospital` FROM `zxznz_active` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:10+08:00 ] 180.173.90.235 /index.php/Home/Order/createOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.000000s ]
+SQL: SELECT `price` FROM `zxznz_active` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `zxznz_order` (`count`,`active_id`,`need_pay`,`from`,`status`,`create_time`,`code`,`user_id`,`price`) VALUES (1,6,0.1,'1','1',1490064250,'MTMtNi0xNDkwMDY0MjUwLTEtMC4xLTE=',13,'0.10') [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:13+08:00 ] 180.173.90.235 /index.php/Home/Order/checkPay/navNum/6/orderId/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SELECT o.id,o.need_pay,o.count,o.price,o.user_id,o.code,a.title,a.pic,a.intro,a.hospital FROM zxznz_order o LEFT JOIN zxznz_active as a ON o.active_id = a.id  WHERE ( o.id = '19' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:15+08:00 ] 66.249.65.91 /index.php/home/doctor/detial/navNum/2/id/86.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '86' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:39+08:00 ] 42.236.48.114 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:51+08:00 ] 42.236.49.179 /index.php/Home/Doctor/detial/navNum/2/id/1235.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1235' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:51+08:00 ] 42.236.50.75 /index.php/Home/Doctor/detial/navNum/2/id/1233.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1233' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:51+08:00 ] 42.236.50.138 /index.php/Home/Doctor/detial/navNum/2/id/1232.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1232' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:51+08:00 ] 42.236.49.157 /index.php/Home/Doctor/detial/navNum/2/id/1237.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1237' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:51+08:00 ] 42.236.49.202 /index.php/Home/Doctor/detial/navNum/2/id/1230.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1230' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:51+08:00 ] 42.236.49.43 /index.php/Home/Doctor/detial/navNum/2/id/1236.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1236' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:51+08:00 ] 42.236.50.171 /index.php/Home/Doctor/detial/navNum/2/id/1234.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1234' ) LIMIT 1   [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:51+08:00 ] 42.236.48.201 /index.php/Home/Doctor/detial/navNum/2/id/1231.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1231' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:44:59+08:00 ] 180.173.90.235 /index.php/Home/Order/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: WIDbody D:\web\–¬…Á«¯\ZXZNZ\Alipay\alipayapi.php Á¨¨ 41 Ë°å.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:45:27+08:00 ] 42.236.49.95 /index.php/Home/Index/index/navNum/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-21T10:45:31+08:00 ] 180.173.90.235 /index.php/Home/Order/receive?buyer_email=18300705320&buyer_id=2088902340834852&exterface=create_direct_pay_by_user&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InYydmVR9X7Y%252FvWJsKEILjZYFhhB2J3xyPCI0iXddJ3y33Oa4Um&notify_time=2017-03-21+10%3A45%3A28&notify_type=trade_status_sync&out_trade_no=19&payment_type=1&seller_email=zxznzcn%40163.com&seller_id=2088621611477285&subject=%E7%BB%B4%E7%BA%B3%E6%96%AF%E6%95%B4%E5%BD%A2%26%E6%B5%B7%E8%93%9D%E4%B9%8B%E8%B0%9C%E6%99%BA%E6%85%A7%E5%8C%BB%E7%BE%8E%E5%93%81&total_fee=0.10&trade_no=2017032121001004850245296256&trade_status=TRADE_SUCCESS&sign=15d6a97d599926fd3259a14f2d5da784&sign_type=MD5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER D:\web\–¬…Á«¯\ZXZNZ\Application\Home\Controller\BaseController.class.php Á¨¨ 13 Ë°å.
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.015625s ]
+SQL: UPDATE `zxznz_order` SET `true_pay`='0.10',`ali_no`='2017032121001004850245296256',`pay_time`=1490064328,`status`='2',`pay_type`='1' WHERE ( id=19 ) [ RunTime:0.000000s ]
+
+[ 2017-03-21T10:59:56+08:00 ] 180.173.90.235 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:00:00+08:00 ] 180.173.90.235 /index.php/Home/Active/index/navNum/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`title`,`pic`,`intro`,`action`,`start_time`,`end_time`,`location`,`price`,`join_num` FROM `zxznz_active` WHERE ( `is_show` = '1' ) ORDER BY start_time  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:00:01+08:00 ] 180.173.90.235 /index.php/Home/Order/despeak/navNum/6/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`pic`,`intro`,`start_time`,`end_time`,`location`,`price`,`hospital` FROM `zxznz_active` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:00:06+08:00 ] 180.173.90.235 /index.php/Home/Order/createOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.000000s ]
+SQL: SELECT `price` FROM `zxznz_active` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `zxznz_order` (`count`,`active_id`,`need_pay`,`from`,`status`,`create_time`,`code`,`user_id`,`price`) VALUES (3,6,0.3,'1','1',1490065206,'MTMtNi0xNDkwMDY1MjA2LTMtMC4zLTE=',13,'0.10') [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:00:09+08:00 ] 180.173.90.235 /index.php/Home/Order/checkPay/navNum/6/orderId/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SELECT o.id,o.need_pay,o.count,o.price,o.user_id,o.code,a.title,a.pic,a.intro,a.hospital FROM zxznz_order o LEFT JOIN zxznz_active as a ON o.active_id = a.id  WHERE ( o.id = '21' ) LIMIT 1   [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:00:21+08:00 ] 180.173.90.235 /index.php/Home/Order/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: WIDbody D:\web\–¬…Á«¯\ZXZNZ\Alipay\alipayapi.php Á¨¨ 41 Ë°å.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:00:50+08:00 ] 180.173.90.235 /index.php/Home/Order/receive?buyer_email=18300705320&buyer_id=2088902340834852&exterface=create_direct_pay_by_user&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InYydmVRmOPGk0FXESi5D7VDOK4RBcTIfS%252B%252FJxCBTj13B%252BxY0Ai&notify_time=2017-03-21+11%3A00%3A47&notify_type=trade_status_sync&out_trade_no=21&payment_type=1&seller_email=zxznzcn%40163.com&seller_id=2088621611477285&subject=%E7%BB%B4%E7%BA%B3%E6%96%AF%E6%95%B4%E5%BD%A2%26%E6%B5%B7%E8%93%9D%E4%B9%8B%E8%B0%9C%E6%99%BA%E6%85%A7%E5%8C%BB%E7%BE%8E%E5%93%81&total_fee=0.30&trade_no=2017032121001004850245297021&trade_status=TRADE_SUCCESS&sign=a04908b23265f215d9b15cb6ff0d2cc0&sign_type=MD5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER D:\web\–¬…Á«¯\ZXZNZ\Application\Home\Controller\BaseController.class.php Á¨¨ 13 Ë°å.
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: UPDATE `zxznz_order` SET `true_pay`='0.30',`ali_no`='2017032121001004850245297021',`pay_time`=1490065247,`status`='2',`pay_type`='1' WHERE ( id=21 ) [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:01:30+08:00 ] 42.236.48.77 /index.php/Home/Index/index/navNum/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:01:39+08:00 ] 42.236.48.76 /index.php/Home/Doctor/detial/navNum/2/id/1241.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1241' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:01:39+08:00 ] 42.236.50.103 /index.php/Home/Doctor/detial/navNum/2/id/1242.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1242' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:01:39+08:00 ] 42.236.49.30 /index.php/Home/Doctor/detial/navNum/2/id/1240.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1240' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:01:39+08:00 ] 42.236.48.90 /index.php/Home/Doctor/detial/navNum/2/id/1239.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1239' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:01:39+08:00 ] 42.236.50.35 /index.php/Home/Doctor/detial/navNum/2/id/1238.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '1238' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:01:39+08:00 ] 180.173.90.235 /index.php/Home/Order/receive?buyer_email=18300705320&buyer_id=2088902340834852&exterface=create_direct_pay_by_user&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InYydmVRmOPGk0FXESi5D7VDOK4RBcTIfS%252B%252FJxCBTj13B%252BxY0Ai&notify_time=2017-03-21+11%3A00%3A47&notify_type=trade_status_sync&out_trade_no=21&payment_type=1&seller_email=zxznzcn%40163.com&seller_id=2088621611477285&subject=%E7%BB%B4%E7%BA%B3%E6%96%AF%E6%95%B4%E5%BD%A2%26%E6%B5%B7%E8%93%9D%E4%B9%8B%E8%B0%9C%E6%99%BA%E6%85%A7%E5%8C%BB%E7%BE%8E%E5%93%81&total_fee=0.30&trade_no=2017032121001004850245297021&trade_status=TRADE_SUCCESS&sign=a04908b23265f215d9b15cb6ff0d2cc0&sign_type=MD5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER D:\web\–¬…Á«¯\ZXZNZ\Application\Home\Controller\BaseController.class.php Á¨¨ 13 Ë°å.
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.015625s ]
+SQL: UPDATE `zxznz_order` SET `true_pay`='0.30',`ali_no`='2017032121001004850245297021',`pay_time`=1490065247,`status`='2',`pay_type`='1' WHERE ( id=21 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-21T11:01:41+08:00 ] 180.173.90.235 /index.php/Home/Order/over/navNum/6/orderId/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SELECT `code`,`ali_no`,`create_time`,`pay_type` FROM `zxznz_order` WHERE ( `id` = 21 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:02:18+08:00 ] 66.249.65.92 /index.php/home/doctor/detial/navNum/2/id/84.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '84' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:02:30+08:00 ] 42.236.48.111 /index.php/Home/Index/index/navNum/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:02:44+08:00 ] 42.236.49.136 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:03:09+08:00 ] 180.173.90.235 /index.php/Home/Order/over/navNum/6/orderId/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.015625s ]
+SQL: SELECT `code`,`ali_no`,`create_time`,`pay_type` FROM `zxznz_order` WHERE ( `id` = 21 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:03:30+08:00 ] 42.236.50.103 /index.php/Home/Index/index/navNum/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:03:41+08:00 ] 180.173.90.235 /index.php/Home/Order/over/navNum/6/orderId/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SELECT `code`,`ali_no`,`create_time`,`pay_type` FROM `zxznz_order` WHERE ( `id` = 21 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:03:43+08:00 ] 180.173.90.235 /index.php/home/doctor/index/navNum/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.hos_id,d.name,d.picture,d.is_show,d.intro,h.name as hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY id desc LIMIT 0,6   [ RunTime:0.078125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:03:49+08:00 ] 180.173.90.235 /index.php/home/doctor/index/navNum/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.hos_id,d.name,d.picture,d.is_show,d.intro,h.name as hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY id desc LIMIT 0,6   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:04:17+08:00 ] 180.173.90.235 /index.php/Home/Order/over/navNum/6/orderId/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SELECT `code`,`ali_no`,`create_time`,`pay_type` FROM `zxznz_order` WHERE ( `id` = 21 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:04:30+08:00 ] 42.236.49.205 /index.php/Home/Index/index/navNum/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:04:43+08:00 ] 42.236.50.73 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:04:43+08:00 ] 180.173.90.235 /index.php/Home/Order/over/navNum/6/orderId/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SELECT `code`,`ali_no`,`create_time`,`pay_type` FROM `zxznz_order` WHERE ( `id` = 21 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-21T11:05:29+08:00 ] 180.173.90.235 /index.php/admin/doctor/edit/id/283.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zxznz_doctor` WHERE ( `id` = 283 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-21T11:05:29+08:00 ] 180.173.90.235 /index.php/Home/Order/over/navNum/6/orderId/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SELECT `code`,`ali_no`,`create_time`,`pay_type` FROM `zxznz_order` WHERE ( `id` = 21 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:05:30+08:00 ] 180.173.90.235 /index.php/Admin/Doctor/ajaxGetCitys/province/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.015625s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:05:36+08:00 ] 180.173.90.235 /index.php/admin/doctor/edit/id/283.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT `picture` FROM `zxznz_doctor` WHERE ( `id` = 283 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\web\–¬…Á«¯\ZXZNZ\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 169 Ë°å.
+SQL: UPDATE `zxznz_doctor` SET `name`='ÈªÑËéâÈõØ',`sex`='Â•≥',`duty`='‰∏ªËØäÂåªÁîü',`title`='‰∏ªÊ≤ªÂåªÂ∏à ',`start`='2004 Ëá≥‰ªä',`edu`='Á†îÁ©∂Áîü',`good`='ÁúºÈÉ®,Èù¢ÈÉ®ËΩÆÂªì,ÂÖ∂‰ªñ',`is_show`='Âê¶',`is_index`='0',`intro`='&lt;p&gt;-&lt;/p&gt;',`pass`='Â§çÊó¶Â§ßÂ≠¶ÈôÑÂ±ûÁúºÈºªÂñâÁßëÂåªÈô¢ÂåªÂ∏à',`hos_id`=52,`picture`='Doctor/2017-03-21/58d098805f758.png' WHERE ( `id` = 283 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:05:37+08:00 ] 180.173.90.235 /index.php/Admin/Doctor/lst/hos_id/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zxznz_doctor` WHERE ( `is_show` = 'ÊòØ' ) AND ( `hos_id` = '52' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zxznz_doctor` WHERE ( `hos_id` = '52' ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-21T11:05:39+08:00 ] 101.226.125.111 /index.php/admin/doctor/edit/id/283.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:05:39+08:00 ] 180.153.206.18 /index.php/admin/doctor/edit/id/283.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:05:39+08:00 ] 101.226.68.200 /index.php/admin/doctor/edit/id/283.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:05:39+08:00 ] 101.226.66.173 /index.php/admin/doctor/edit/id/283.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:06:09+08:00 ] 180.173.90.235 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:06:31+08:00 ] 42.236.49.160 /index.php/Home/Index/index/navNum/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-21T11:06:43+08:00 ] 42.236.50.39 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:07:42+08:00 ] 180.173.90.235 /index.php/Admin/Doctor/edit/id/284.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `zxznz_doctor` WHERE ( `id` = 284 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:07:42+08:00 ] 180.173.90.235 /index.php/Admin/Doctor/ajaxGetCitys/province/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:07:48+08:00 ] 180.173.90.235 /index.php/Admin/Doctor/edit/id/284.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT `picture` FROM `zxznz_doctor` WHERE ( `id` = 284 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\web\–¬…Á«¯\ZXZNZ\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 169 Ë°å.
+SQL: UPDATE `zxznz_doctor` SET `name`='ÈôàÂª∫Áíã',`sex`='Áî∑',`duty`='Èô¢Èïø',`title`='‰∏ªÊ≤ªÂåªÂ∏à ‰∏ª‰ªªÂåªÂ∏à ',`start`='2000Ëá≥‰ªä',`edu`='Á†îÁ©∂Áîü',`good`='ËÉ∏ÈÉ®,Áæé‰ΩìÂ°ëÂΩ¢,Ëá™‰ΩìËÑÇËÇ™Â°´ÂÖÖ',`is_show`='Âê¶',`is_index`='0',`intro`='&lt;p&gt;-&lt;/p&gt;',`pass`='Ê±êÊ≠¢ÂõΩÊ≥∞ÂåªÈô¢Êï¥ÂΩ¢Â§ñÁßë‰∏ª‰ªª-----ÂõΩÊ≥∞ÂåªÈô¢‰∏ªÊ≤ªÂåªÂ∏à-----Âè∞Â§ßÂåªÈô¢Êï¥ÂΩ¢Â§ñÁßëÂÖº‰ªª‰∏ª‰ªªÂåªÂ∏à-----Âè∞Â§ßÂåªÈô¢Êï¥ÂΩ¢Â§ñÁßëÊÄªÂåªÂ∏à-----Âè∞Â§ßÂåªÈô¢‰ΩèÈô¢ÂåªÂ∏à-----Âè∞Â§ßÂ§ñÁßëÈÉ®‰∏¥Â∫äËÆ≤Â∏à',`hos_id`=52,`picture`='Doctor/2017-03-21/58d0990400177.png' WHERE ( `id` = 284 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:07:49+08:00 ] 180.173.90.235 /index.php/Admin/Doctor/lst/hos_id/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zxznz_doctor` WHERE ( `is_show` = 'ÊòØ' ) AND ( `hos_id` = '52' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zxznz_doctor` WHERE ( `hos_id` = '52' ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:07:51+08:00 ] 112.65.193.14 /index.php/Admin/Doctor/edit/id/284.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:05+08:00 ] 180.173.90.235 /index.php/admin/hospital/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:07+08:00 ] 180.173.90.235 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:08+08:00 ] 180.173.90.235 /index.php/Admin/Login/login_verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:11+08:00 ] 180.173.90.235 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:11+08:00 ] 180.173.90.235 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zxznz_admin` WHERE ( `username` = 'admin1' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:12+08:00 ] 180.173.90.235 /index.php/Home/Active/index/navNum/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`pic`,`intro`,`action`,`start_time`,`end_time`,`location`,`price`,`join_num` FROM `zxznz_active` WHERE ( `is_show` = '1' ) ORDER BY start_time  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:13+08:00 ] 180.173.90.235 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:13+08:00 ] 180.173.90.235 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_privilege` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zxznz_privilege`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:13+08:00 ] 180.173.90.235 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.015625s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:14+08:00 ] 180.173.90.235 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.015625s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:14+08:00 ] 180.173.90.235 /index.php/Home/Order/despeak/navNum/6/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`pic`,`intro`,`start_time`,`end_time`,`location`,`price`,`hospital` FROM `zxznz_active` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:14+08:00 ] 180.173.90.235 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_privilege` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zxznz_privilege`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-21T11:08:14+08:00 ] 180.173.90.235 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:16+08:00 ] 180.173.90.235 /index.php/Admin/Test/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:16+08:00 ] 180.173.90.235 /index.php/Admin/Hospital/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zxznz_hospital` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zxznz_hospital` ORDER BY id desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:16+08:00 ] 180.173.90.235 /index.php/Home/Order/createOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.015625s ]
+SQL: SELECT `price` FROM `zxznz_active` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `zxznz_order` (`count`,`active_id`,`need_pay`,`from`,`status`,`create_time`,`code`,`user_id`,`price`) VALUES (1,6,0.1,'1','1',1490065696,'MTMtNi0xNDkwMDY1Njk2LTEtMC4xLTE=',13,'0.10') [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:16+08:00 ] 180.173.90.235 /index.php/Admin/Hospital/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zxznz_hospital` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zxznz_hospital` ORDER BY id desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+NOTIC: [8] Undefined index: type D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php Á¨¨ 50 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:17+08:00 ] 180.173.90.235 /index.php/Admin/Hospital/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_type` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`type_name` FROM `zxznz_type`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:19+08:00 ] 180.173.90.235 /index.php/Home/Order/checkPay/navNum/6/orderId/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SELECT o.id,o.need_pay,o.count,o.price,o.user_id,o.code,a.title,a.pic,a.intro,a.hospital FROM zxznz_order o LEFT JOIN zxznz_active as a ON o.active_id = a.id  WHERE ( o.id = '22' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:22+08:00 ] 180.173.90.235 /index.php/Home/Order/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: WIDbody D:\web\–¬…Á«¯\ZXZNZ\Alipay\alipayapi.php Á¨¨ 41 Ë°å.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:31+08:00 ] 180.173.90.235 /index.php/Admin/Hospital/ajaxGetCitys/province/%E5%8C%97%E4%BA%AC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.015625s ]
+
+[ 2017-03-21T11:08:48+08:00 ] 180.173.90.235 /index.php/Home/Order/receive?buyer_email=18300705320&buyer_id=2088902340834852&exterface=create_direct_pay_by_user&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InYydmVRmY1Ez1ZQ703CKN%252FMdfERagli24l8Yu7BzulgMYNwSck&notify_time=2017-03-21+11%3A08%3A45&notify_type=trade_status_sync&out_trade_no=22&payment_type=1&seller_email=zxznzcn%40163.com&seller_id=2088621611477285&subject=%E7%BB%B4%E7%BA%B3%E6%96%AF%E6%95%B4%E5%BD%A2%26%E6%B5%B7%E8%93%9D%E4%B9%8B%E8%B0%9C%E6%99%BA%E6%85%A7%E5%8C%BB%E7%BE%8E%E5%93%81&total_fee=0.10&trade_no=2017032121001004850245357436&trade_status=TRADE_SUCCESS&sign=c9aad448c668b507b55234e475f3826f&sign_type=MD5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: HTTP_REFERER D:\web\–¬…Á«¯\ZXZNZ\Application\Home\Controller\BaseController.class.php Á¨¨ 13 Ë°å.
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: UPDATE `zxznz_order` SET `true_pay`='0.10',`ali_no`='2017032121001004850245357436',`pay_time`=1490065725,`status`='2',`pay_type`='1' WHERE ( id=22 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:49+08:00 ] 180.173.90.235 /index.php/Home/Order/over/navNum/6/orderId/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_user` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`username` FROM `zxznz_user` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.000000s ]
+SQL: SELECT `code`,`ali_no`,`create_time`,`pay_type` FROM `zxznz_order` WHERE ( `id` = 22 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:08:49+08:00 ] 66.249.65.91 /index.php/home/doctor/detial/navNum/2/id/32.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.hos_id,d.sex,d.name,d.title,d.duty,d.start,d.edu,d.good,d.pass,d.picture,d.is_show,d.intro,(h.name)hos_name,(h.intro)hos_intro FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.id = '32' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:09:38+08:00 ] 42.236.48.111 /index.php/Home/Index/index/navNum/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-21T11:09:51+08:00 ] 42.236.49.154 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = 'ÊòØ' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_key D:\web\–¬…Á«¯\ZXZNZ\Public\Home\header.html Á¨¨ 6 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 169 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 188 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 205 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 224 Ë°å.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\web\–¬…Á«¯\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php Á¨¨ 241 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:10:09+08:00 ] 180.173.90.235 /index.php/Admin/Doctor/edit/id/285.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zxznz_doctor` WHERE ( `id` = 285 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:10:10+08:00 ] 180.173.90.235 /index.php/Admin/Doctor/ajaxGetCitys/province/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:10:15+08:00 ] 180.173.90.235 /index.php/Admin/Doctor/edit/id/285.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT `picture` FROM `zxznz_doctor` WHERE ( `id` = 285 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\web\–¬…Á«¯\ZXZNZ\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 169 Ë°å.
+SQL: UPDATE `zxznz_doctor` SET `name`='ÈôàÊâøË∞¶',`sex`='Áî∑',`duty`='Èô¢Èïø',`title`='‰∏ªÊ≤ªÂåªÂ∏à ',`start`='2001Âπ¥Ëá≥‰ªä',`edu`='Á†îÁ©∂Áîü',`good`='Èù¢ÈÉ®ËΩÆÂªì,ÁéªÂ∞øÈÖ∏,ËÇâÊØíÁ¥†',`is_show`='ÊòØ',`is_index`='0',`intro`='&lt;p&gt;-&lt;/p&gt;',`pass`='Âè∞ÂåóËç£ÊÄªÂ§ñÁßëÈÉ®‰ΩèÈô¢ÂåªÂ∏à-----Âè∞ÂåóËç£ÊÄªÊï¥ÂΩ¢Â§ñÁßëÊÄªÂåªÂ∏à-----Âè∞ÂåóËç£ÊÄªÊï¥ÂΩ¢Â§ñÁßëÁâπÁ∫¶ÂåªÂ∏à-----Âè∞ÂåóËç£ÊÄªÊï¥ÂΩ¢Â§ñÁßë‰∏ªÊ≤ªÂåªÂ∏à-----ÂõΩÈò≤ÂåªÂ≠¶Èô¢‰∏¥Â∫äËÆ≤Â∏à-----Âè∞ÂåóËç£ÊÄªËãèÊæ≥ÂàÜÈô¢Êï¥ÂΩ¢Â§ñÁßë‰∏ªÊ≤ªÂåªÂ∏à-----Âè∞ÂåóÂ∏ÇÁ´ãËÅîÂêàÂåªÈô¢ÂíåÂπ≥Â¶áÂπºÈô¢Âå∫Êï¥ÂΩ¢Â§ñÁßëÂåªÂ∏à',`hos_id`=52,`picture`='Doctor/2017-03-21/58d09997b361e.png' WHERE ( `id` = 285 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:10:16+08:00 ] 180.173.90.235 /index.php/Admin/Doctor/lst/hos_id/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.000000s ]
+SQL: SELECT ar.admin_id,ar.role_id,r.role_name,p.pri_name,rp.pri_id,p.module_name,p.controller_name,p.action_name FROM zxznz_admin a INNER JOIN zxznz_admin_role as ar ON a.id = ar.admin_id INNER JOIN zxznz_role as r ON ar.role_id = r.id INNER JOIN zxznz_role_pri as rp ON r.id = rp.role_id INNER JOIN zxznz_privilege as p ON rp.pri_id = p.id  WHERE ( a.id = '2' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zxznz_doctor` WHERE ( `is_show` = 'ÊòØ' ) AND ( `hos_id` = '52' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zxznz_doctor` WHERE ( `hos_id` = '52' ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T11:10:19+08:00 ] 180.153.214.152 /index.php/Admin/Doctor/edit/id/285.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T16:00:47+08:00 ] 182.131.12.12 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T16:40:50+08:00 ] 123.151.138.60 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015625s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T18:20:18+08:00 ] 223.104.5.226 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.015625s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T23:08:40+08:00 ] 114.216.87.91 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T23:09:15+08:00 ] 114.216.87.91 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T23:24:08+08:00 ] 182.140.175.143 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T23:24:57+08:00 ] 182.140.175.143 /api.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.000000s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 9   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

@@ -11,7 +11,7 @@ class ActiveModel
 					  ->where(array(
 					 	'is_show'		=>	array('eq','1'),
 					 	))
-					  ->order('start_time')
+					  ->order('start_time DESC')
 					  ->select();
 		return $data;
 	}

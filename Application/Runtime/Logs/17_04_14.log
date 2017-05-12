@@ -1,0 +1,1295 @@
+[ 2017-04-14T08:40:28+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001906s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.007743s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = '是' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.022777s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.004391s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.001142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: page_key E:\Wamp\host\ZXZNZ\Public\Home\header.html 第 6 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 205 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 224 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 205 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 224 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007986s ]
+
+[ 2017-04-14T08:40:30+08:00 ] 127.0.0.1 /index.php/Home/Active/index/navNum/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004897s ]
+SQL: SELECT `id`,`title`,`pic`,`intro`,`action`,`start_time`,`end_time`,`location`,`price`,`join_num` FROM `zxznz_active` WHERE ( `is_show` = '1' ) ORDER BY start_time DESC  [ RunTime:0.000685s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: page_key E:\Wamp\host\ZXZNZ\Public\Home\header.html 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001477s ]
+
+[ 2017-04-14T08:40:35+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+
+[ 2017-04-14T08:40:39+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2017-04-14T08:40:39+08:00 ] 127.0.0.1 /index.php/Admin/Login/login_verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001408s ]
+
+[ 2017-04-14T08:40:45+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `zxznz_admin` [ RunTime:0.004129s ]
+SQL: SELECT * FROM `zxznz_admin` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2017-04-14T08:40:46+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2017-04-14T08:40:46+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2017-04-14T08:40:46+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `zxznz_privilege` [ RunTime:0.007572s ]
+SQL: SELECT * FROM `zxznz_privilege`  [ RunTime:0.001155s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001422s ]
+
+[ 2017-04-14T08:40:46+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2017-04-14T08:40:47+08:00 ] 127.0.0.1 /index.php/Admin/Hospital/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.004290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zxznz_hospital` LIMIT 1   [ RunTime:0.016485s ]
+SQL: SELECT * FROM `zxznz_hospital` ORDER BY id desc LIMIT 0,8   [ RunTime:0.000568s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: type E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php 第 50 行.
+NOTIC: [8] Undefined index: type E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php 第 50 行.
+NOTIC: [8] Undefined index: type E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php 第 50 行.
+NOTIC: [8] Undefined index: type E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php 第 50 行.
+NOTIC: [8] Undefined index: type E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php 第 50 行.
+NOTIC: [8] Undefined index: type E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php 第 50 行.
+NOTIC: [8] Undefined index: type E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php 第 50 行.
+NOTIC: [8] Undefined index: type E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\0770792f8531293146c00cb1325dfec1.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2017-04-14T08:40:54+08:00 ] 127.0.0.1 /index.php/Admin/Sponsor/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: infos E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\08d31ac9427e0e8b9b40d5c8a342e8a9.php 第 40 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\08d31ac9427e0e8b9b40d5c8a342e8a9.php 第 40 行.
+NOTIC: [8] Undefined variable: page E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\08d31ac9427e0e8b9b40d5c8a342e8a9.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2017-04-14T08:40:54+08:00 ] 127.0.0.1 /index.php/Admin/Type/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `zxznz_type` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`type_name`,`parent_id` FROM `zxznz_type`  [ RunTime:0.000289s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2017-04-14T08:40:55+08:00 ] 127.0.0.1 /index.php/Admin/Publish/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `zxznz_publish` [ RunTime:0.006816s ]
+SQL: SELECT `id`,`title`,`begin`,`action`,`is_show`,`create_time`,`bg`,`bg_type` FROM `zxznz_publish`  [ RunTime:0.000646s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: page E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\5cbac7352c4bcb237b40ae07142cf96d.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2017-04-14T08:40:56+08:00 ] 127.0.0.1 /index.php/Admin/Nav/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `zxznz_nav` [ RunTime:0.004613s ]
+SQL: SELECT `id`,`name`,`controller`,`action` FROM `zxznz_nav`  [ RunTime:0.000290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: parent_id E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\70e04a84d93202588d1717f6ef2f2e8e.php 第 45 行.
+NOTIC: [8] Undefined index: parent_id E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\70e04a84d93202588d1717f6ef2f2e8e.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-04-14T08:40:58+08:00 ] 127.0.0.1 /index.php/Admin/Publish/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `zxznz_publish` [ RunTime:0.004672s ]
+SQL: SELECT `id`,`title`,`begin`,`action`,`is_show`,`create_time`,`bg`,`bg_type` FROM `zxznz_publish`  [ RunTime:0.000453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: page E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\5cbac7352c4bcb237b40ae07142cf96d.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002124s ]
+
+[ 2017-04-14T08:41:03+08:00 ] 127.0.0.1 /index.php/Admin/Order/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: _page_title E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\6929b1ce86d5fcc660e84cb37a1b0795.php 第 4 行.
+NOTIC: [8] Undefined variable: _page_btn_link E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\6929b1ce86d5fcc660e84cb37a1b0795.php 第 18 行.
+NOTIC: [8] Undefined variable: _page_btn_name E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\6929b1ce86d5fcc660e84cb37a1b0795.php 第 18 行.
+NOTIC: [8] Undefined variable: _page_title E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\6929b1ce86d5fcc660e84cb37a1b0795.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2017-04-14T08:41:05+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004450s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2017-04-14T08:41:43+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004058s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2017-04-14T08:43:10+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2017-04-14T08:43:10+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2017-04-14T08:43:10+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2017-04-14T08:43:10+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+SQL: SHOW COLUMNS FROM `zxznz_privilege` [ RunTime:0.013917s ]
+SQL: SELECT * FROM `zxznz_privilege`  [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2017-04-14T08:43:12+08:00 ] 127.0.0.1 /index.php/Admin/Index/showPerson.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2017-04-14T08:43:34+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-04-14T08:44:35+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+
+[ 2017-04-14T08:44:38+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2017-04-14T08:44:38+08:00 ] 127.0.0.1 /index.php/Admin/Login/login_verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2017-04-14T08:44:38+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-04-14T08:44:41+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-04-14T08:44:41+08:00 ] 127.0.0.1 /index.php/Admin/Login/login_verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2017-04-14T08:44:59+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2017-04-14T08:44:59+08:00 ] 127.0.0.1 /index.php/Admin/Login/login_verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2017-04-14T08:45:01+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-04-14T08:45:01+08:00 ] 127.0.0.1 /index.php/Admin/Login/login_verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2017-04-14T08:45:04+08:00 ] 127.0.0.1 /index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2017-04-14T08:45:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2017-04-14T08:45:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2017-04-14T08:45:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `zxznz_privilege` [ RunTime:0.004131s ]
+SQL: SELECT * FROM `zxznz_privilege`  [ RunTime:0.000722s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001523s ]
+
+[ 2017-04-14T08:45:09+08:00 ] 127.0.0.1 /index.php/Admin/Order/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: _page_title E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\6929b1ce86d5fcc660e84cb37a1b0795.php 第 4 行.
+NOTIC: [8] Undefined variable: _page_btn_link E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\6929b1ce86d5fcc660e84cb37a1b0795.php 第 18 行.
+NOTIC: [8] Undefined variable: _page_btn_name E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\6929b1ce86d5fcc660e84cb37a1b0795.php 第 18 行.
+NOTIC: [8] Undefined variable: _page_title E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Admin\6929b1ce86d5fcc660e84cb37a1b0795.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-04-14T08:45:10+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.005303s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000229s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2017-04-14T08:48:55+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.009053s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2017-04-14T08:51:12+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.005042s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000184s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001978s ]
+
+[ 2017-04-14T08:51:12+08:00 ] 127.0.0.1 /index.php/Admin/Order/index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+ERR: 非法操作:index.php
+NOTIC: [8] Undefined variable: message E:\Wamp\host\ZXZNZ\ThinkPHP\Tpl\dispatch_jump.tpl 第 31 行.
+NOTIC: [8] Undefined variable: jumpUrl E:\Wamp\host\ZXZNZ\ThinkPHP\Tpl\dispatch_jump.tpl 第 38 行.
+NOTIC: [8] Undefined variable: waitSecond E:\Wamp\host\ZXZNZ\ThinkPHP\Tpl\dispatch_jump.tpl 第 38 行.
+
+[ 2017-04-14T08:51:15+08:00 ] 127.0.0.1 /index.php/Admin/Order/index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+ERR: 非法操作:index.php
+NOTIC: [8] Undefined variable: message E:\Wamp\host\ZXZNZ\ThinkPHP\Tpl\dispatch_jump.tpl 第 31 行.
+NOTIC: [8] Undefined variable: jumpUrl E:\Wamp\host\ZXZNZ\ThinkPHP\Tpl\dispatch_jump.tpl 第 38 行.
+NOTIC: [8] Undefined variable: waitSecond E:\Wamp\host\ZXZNZ\ThinkPHP\Tpl\dispatch_jump.tpl 第 38 行.
+
+[ 2017-04-14T08:51:28+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003540s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004443s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000214s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2017-04-14T08:51:29+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004628s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.id > 0 ) ORDER BY o.id desc  [ RunTime:0.025887s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004489s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001499s ]
+
+[ 2017-04-14T08:51:52+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004344s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.status = '2' ) ORDER BY o.id desc  [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004478s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+
+[ 2017-04-14T08:51:57+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001319s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004698s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.status = '2' ) AND ( o.pay_type = '2' ) ORDER BY o.id desc  [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.003930s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2017-04-14T08:52:01+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004215s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.status = '2' ) AND ( o.pay_type = '3' ) ORDER BY o.id desc  [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004109s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-04-14T08:52:05+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004024s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.status = '2' ) AND ( o.pay_type = '1' ) ORDER BY o.id desc  [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004046s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2017-04-14T08:53:58+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004063s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000157s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2017-04-14T08:53:58+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.005201s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.id > 0 ) ORDER BY o.id desc  [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004102s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001238s ]
+
+[ 2017-04-14T08:54:03+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004436s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.from = '2' ) ORDER BY o.id desc  [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004265s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2017-04-14T08:54:12+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004089s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.from = '2' ) AND ( o.pay_type = '3' ) ORDER BY o.id desc  [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004640s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2017-04-14T08:56:06+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004340s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001489s ]
+
+[ 2017-04-14T08:56:06+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004777s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.id > 0 ) ORDER BY o.id desc  [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004002s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2017-04-14T08:56:10+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004002s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.pay_type = '3' ) ORDER BY o.id desc  [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004079s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2017-04-14T08:57:18+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.003967s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2017-04-14T08:57:18+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004843s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.id > 0 ) ORDER BY o.id desc  [ RunTime:0.001427s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004802s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2017-04-14T08:57:33+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004147s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.status = '2' ) ORDER BY o.id desc  [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004025s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2017-04-14T08:57:37+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.003975s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.status = '2' ) AND ( o.pay_type = '3' ) ORDER BY o.id desc  [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.003993s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2017-04-14T08:58:08+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.005278s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.id > 0 ) ORDER BY o.id desc  [ RunTime:0.001205s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004018s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2017-04-14T08:58:32+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004060s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.active_id = '7' ) ORDER BY o.id desc  [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004043s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2017-04-14T08:58:37+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004259s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.active_id = '6' ) ORDER BY o.id desc  [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004257s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2017-04-14T08:58:41+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004004s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.id > 0 ) ORDER BY o.id desc  [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004016s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2017-04-14T08:58:53+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.004722s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.from = '2' ) ORDER BY o.id desc  [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004427s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2017-04-14T08:59:14+08:00 ] 127.0.0.1 /index.php/Admin/Order/big.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.004848s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2017-04-14T08:59:15+08:00 ] 127.0.0.1 /index.php/Admin/Order/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `zxznz_order` [ RunTime:0.005682s ]
+SQL: SELECT o.id,o.code,o.from,o.status,o.user_id,o.active_id,FROM_UNIXTIME(o.create_time,'%Y%m%d %H%i%s') as create_time,FROM_UNIXTIME(o.cancel_time,'%Y%m%d %H%i%s') as cancel_time,FROM_UNIXTIME(o.pay_time,'%Y%m%d %H%i%s') as pay_time,o.need_pay,o.true_pay,o.pay_type,o.count,o.price,o.ali_no,(u.username)username,(a.title)active_name FROM zxznz_order o LEFT JOIN zxznz_user u ON u.id = o.user_id LEFT JOIN zxznz_active a ON a.id = o.active_id  WHERE ( o.id > 0 ) ORDER BY o.id desc  [ RunTime:0.001428s ]
+SQL: SHOW COLUMNS FROM `zxznz_active` [ RunTime:0.005726s ]
+SQL: SELECT `id`,`title` FROM `zxznz_active`  [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+

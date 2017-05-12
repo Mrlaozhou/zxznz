@@ -7,10 +7,11 @@ class BaseController extends Controller
 	{
 		//调用父类的构造方法
 		parent::__construct();
-
+		
 		//判断是否登录
 		if( !session('admin_id') ) 
 		{
+			// dump(session('admin_id'));
 			$this->error('请先登录！',U('Login/login'));
 		}
 		else
@@ -61,9 +62,11 @@ class BaseController extends Controller
 				
 				
 				//当前路由
-				$currentPath = MODULE_NAME.'-'.CONTROLLER_NAME.'-'.ACTION_NAME;
+				$currentPath = MODULE_NAME.'-'.CONTROLLER_NAME.'-'.toLower(ACTION_NAME);
 				
-
+				//dump($PRI);
+				//dump($currentPath);
+				//exit;
 				//权限判断
 				if( !in_array($currentPath,$PRI) )
 				{

@@ -98,15 +98,12 @@ class OrderController extends BaseController
 				switch ((int)$config['pay_type']) 
 				{
 					case 1:
-
-						//开启支付
 						echo makeAlipayBtn();
-						//支付判断
-						//重定向
 						break;
 					
-					default:
-						echo 'weixin';
+					case 2:
+						$wx = new \Home\Controller\WxpayController();
+						$wx->init();
 						break;
 				}
 			}
@@ -139,4 +136,21 @@ class OrderController extends BaseController
 		));
 		$this->display();
 	}
+	
+	public function wreceive()
+	{
+		//接受参数
+		$xml = $_GLOBAL['HTTP_RAW_POST_DATA'];
+
+		//转化数据类型
+		$result = simplexml_load_string($xml);
+
+		//判断
+		if( $result )
+		{
+			dump($result);
+			exit;
+		}
+	}
+
 }

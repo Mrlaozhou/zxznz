@@ -33,7 +33,31 @@ class IndexController extends Controller {
             ));
         $this->display();
     }
+	
+	public function person()
+    {
+        if( session('user_id') )
+        {
+            $model = D('Home/Index');
+            $data = $model->getPerson();
 
+           
+            $this->assign(array(
+            'page_title' => '智慧医美_整形指南针',
+            'page_desc'  => 'e折整形 全国抢购',
+
+            'data'       =>  $data,
+            ));
+
+            $this->display();    
+        }
+        else
+        {
+            $this->error('请先登录！');
+            exit;
+        }
+    }
+	
     public function login()
     {
         if ( IS_POST )
@@ -163,6 +187,7 @@ class IndexController extends Controller {
             //验证是否注册
             $model = D('Index');
             $result = $model->rExists($mobile); 
+
             if( $result === TRUE )
             {
                 //url
@@ -590,6 +615,166 @@ class IndexController extends Controller {
                     'status'    =>  FALSE,
                     ));
             }
+        }
+    }
+	public function queryOrder()
+	{
+		header("Access-Control-Allow-Origin:*");
+		
+		$id = I('post.id');
+
+		if( !$id )
+		{
+			echo json_encode(array('status'=>FALSE));	
+			exit;
+		}
+		$model = D('Order');
+
+		$info = $model->field('status')
+					 ->find($id);
+		if( $info['status'] == '2' )
+		{
+			echo json_encode(array('status'=>TRUE));
+			exit;		
+		}
+		echo json_encode(array('status'=>FALSE));
+		exit;
+	}
+
+    //reset 密码
+    public function forget()
+    {
+        $this->display();
+    }
+    public function sendResetMsg()
+    {
+        $mobile = I('post.mobile');
+        if ( $mobile )
+        {
+            $model = D('Index');
+            $result = $model->rExists($mobile);
+            if ( $result === 1 )
+            {
+                echo json_encode(array('status'=>FALSE,'info'=>'手机号格式有误'));exit;
+            }
+            if ( $result === TRUE )
+            {
+                echo json_encode(array('status'=>FALSE,'info'=>'此手机号未注册'));exit;
+            }
+            if ( $result === 3 )
+            {
+                exit;
+            }
+
+            #########验证是否发送过
+            if ( $msg = session('FORGET'.'_'.$mobile) )
+            {
+                $msg = explode('-',$msg);
+
+                $offset = time()-$msg[1];
+
+                if( $offset < 1800 )
+                {
+                    echo json_encode(array('status'=>FALSE,'info'=>'已发送，请查收'));exit;
+                }
+            }
+            
+            #发送
+            //生成随机验证码
+            $rand = getRandStr(4,2);
+            
+            //短信接口地址
+            $url = 'http://106.ihuyi.com/webservice/sms.php?method=Submit';
+
+            //账户、密码
+            $account = 'C22986809';
+            $password = '37454a5b2e36e986562439659c74c928';
+
+            $post_data = "account={$account}&password={$password}&mobile={$mobile}&content=".rawurlencode("您的验证码是：{$rand}。请不要把验证码泄露给其他人。");
+
+            /*|发送验证码|*/
+            $result = POST($post_data,$url);
+
+            //处理数据
+            $result = simplexml_load_string($result);
+            
+            if( $result->code == 2 )
+            {
+                //发送成功，储存信息
+                session('FORGET'.'_'.$mobile,$rand.'-'.time());
+               
+                echo json_encode(array('status'=>TRUE));exit;
+            }
+            else
+            {
+                echo json_encode(array('status'=>FALSE,'info'=>'正在维护，请稍后再试'));exit;
+            }
+        }
+        else
+        {
+            echo json_encode(array('status'=>FALSE,'info'=>'请输入手机号'));exit;
+        }
+    }
+
+    public function checkResetMsg()
+    {
+        $mobile = I('post.mobile');
+        $code = I('post.code');
+        if( $mobile && $code )
+        {
+            if ( ! $msg = session('FORGET'.'_'.$mobile) )
+            {
+                echo json_encode(array('status'=>FALSE,'info'=>'请先获取验证码'));exit;
+            }
+            $msg = explode('-',$msg);
+            $rand = $msg[0];
+            if ( $rand != $code )
+            {
+                echo json_encode(array('status'=>FALSE,'info'=>'验证码不正确'));exit;
+            }
+            session('FORGET'.'_'.$mobile,null);
+            session('ALLOW_'.$mobile,'OK');
+            echo json_encode(array('status'=>TRUE));exit;
+        }
+        else
+        {
+             echo json_encode(array('status'=>FALSE,'info'=>'请输入验证码'));exit;
+        }
+    }
+    public function reset()
+    {
+        $mobile = I('post.mobile');
+        $pwd_1 = I('post.pwd_1');
+        $pwd_2 = I('post.pwd_2');
+        if( $mobile && $pwd_1 && $pwd_2 )
+        {
+            if ( ! session('ALLOW_'.$mobile) === 'OK' )
+            {
+                echo json_encode(array('status'=>FALSE,'info'=>'验证码验证未通过'));exit;
+            }
+            $model = D('Index');
+            $result = $model -> rPwd($pwd_1);
+            //dump($result);
+            if ( $result === 1 )
+                exit(json_encode(array('status'=>FALSE,'info'=>'密码中含有非法字符')));
+            if ( $result === 2 )
+                exit(json_encode(array('status'=>FALSE,'info'=>'长度为6-12个字符')));
+            if ( $pwd_1 != $pwd_2 )
+                exit(json_encode(array('status'=>FALSE,'info'=>'两次密码不一致')));
+
+            ############重置密码
+            $user = M('User');
+            $info = $user->where(array('username'=>array('eq',$mobile)))
+                          ->save(array('password'=>md5($pwd_2)));
+            if( $info === FASLE )
+                exit(json_encode(array('status'=>FALSE,'info'=>'系统维护，请稍后再试')));
+            //释放权限
+            session('ALLOW_'.$mobile,null);
+            echo json_encode(array('status'=>TRUE));exit;
+        }
+        else
+        {
+           echo json_encode(array('status'=>FALSE,'info'=>'请认真输入信息'));exit; 
         }
     }
 }

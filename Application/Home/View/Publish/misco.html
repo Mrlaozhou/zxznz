@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>misco-misju线性材料注射隆鼻技术</title>
+	<style type="text/css" media="screen">
+		html,body
+		{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			font-family: '微软雅黑';
+		}
+		.header-bg img
+		{
+			width: 100%;
+		}
+		.misco-scope-container
+		{
+			width: 100%;
+			height: 694px;
+		}
+		.misco-scope
+		{
+			width: 1000px;
+			height: 100%;
+			margin: 0 auto;
+			box-sizing: border-box;
+		}
+		.misco-scope-title
+		{
+			text-align: center;
+			margin-top: 66px;
+		}
+		.misco-scope-title img
+		{
+			width: 404px;
+		}
+		.misco-scope-desc
+		{
+			text-align: center;
+			font-size: 16px;
+			color: #333;
+			margin: 44px 0 52px; 
+			line-height: 30px;
+		}
+		.misco-scope-info
+		{
+			font-size: 0;
+		}
+		.misco-scope-item
+		{
+			display: inline-block;
+			width: 150px;
+			height: 302px;
+			vertical-align: top;
+			margin-right: 20px;
+			position: relative;
+			overflow: hidden;
+		}
+		.misco-scope-item:nth-child(6)
+		{
+			margin-right: 0;
+		}
+		.misco-scope-item-desc .desc-title
+		{
+			font-size: 20px;
+			color: #d04291;
+			line-height: 50px;
+		}
+		.misco-scope-item-desc .desc-detail
+		{
+			font-size: 14px;
+			color: #666;
+			line-height: 20px;
+		}
+		.misco-scope-item-desc .line-v
+		{
+			width: 60px;
+			height: 2px;
+			background-color: #ddd;
+		}
+		.misco-scope-item-desc .line-v-1,.misco-scope-item-desc .line-v-3,.misco-scope-item-desc .line-v-5
+		{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		.misco-scope-item-img-2,.misco-scope-item-img-4,.misco-scope-item-img-6
+		{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		.misco-advantages-container
+		{
+			width: 100%;
+			height: 1034px;
+			background: #f3f2fa;
+		}
+		.misco-advantages
+		{
+			width: 1000px;
+			height: 100%;
+			margin: 0 auto;
+		}
+		.misco-advantages-title
+		{
+			text-align: center;
+		}
+		.misco-advantages-title img
+		{
+			width: 556px;
+			margin: 60px 0 30px;
+		}
+		.misco-advantage-img
+		{
+			width: 100%;
+		}
+		.misco-material-container
+		{
+			width: 100%;
+			height: 772px;
+		}
+		.misco-material
+		{
+			width: 1000px;
+			height: 100%;
+			margin: 0 auto;
+		}
+		.misco-material-title
+		{
+			text-align: center;
+		}
+		.misco-material-title img
+		{
+			width: 480px;
+			margin: 60px 0 50px;
+		}
+		.misco-material-item
+		{
+			display: inline-block;
+			width: 200px;
+			margin-right: 66px;
+			vertical-align: top;
+		}
+		.misco-material-info
+		{
+			font-size: 0;
+		}
+		.misco-material-item:nth-child(4)
+		{
+			margin-right: 0;
+		}
+		.material-advantage-tag
+		{
+			width: 70px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			color: #fff;
+			background: #d04291;
+			font-size: 16px;
+			margin: 20px auto 10px;
+		}
+		.material-advantage-desc
+		{
+			font-size: 14px;
+			color: #333;
+			text-align: center;
+		}
+		.material-tissue-tag
+		{
+			width: 170px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			color: #fff;
+			background: #d04291;
+			font-size: 16px;
+			margin: 20px auto 10px;
+		}
+		.material-tissue-desc
+		{
+			font-size: 14px;
+			color: #333;
+			text-align: center;
+		}
+		.material-defect-tag
+		{
+			width: 70px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			color: #fff;
+			background: #d04291;
+			font-size: 16px;
+			margin: 20px auto 10px;
+		}
+		.material-defect-desc
+		{
+			font-size: 14px;
+			color: #333;
+			text-align: center;
+		}
+		.misco-inject-container
+		{
+			width: 100%;
+			height: 670px;
+			background: #f3f2fa;
+		}
+		.misco-inject
+		{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.misco-inject-title
+		{
+			text-align: center;
+		}
+		.misco-inject-title img
+		{
+			width: 447px;
+			margin: 60px 0;
+		}
+		.misco-inject-info
+		{
+			font-size: 0;
+		}
+		.misco-inject-item
+		{
+			display: inline-block;
+			width: 300px;
+			margin-right: 50px;
+			vertical-align: top;
+		}
+		.misco-inject-item:nth-child(3)
+		{
+			margin-right: 0;
+		}
+		.inject-item-title
+		{
+			font-size: 20px;
+			color: #333;
+			line-height: 50px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.inject-item-desc
+		{
+			font-size: 14px;
+			color: #666;
+			text-align: center;
+			line-height: 22px;
+		}
+	</style>
+</head>
+<body>
+	<!-- misco-misju header background image -->
+	<div class="header-bg">
+		<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-header-bg.jpg" alt="">
+	</div>
+
+	<!-- misco-misju applicable scope -->
+	<section class="misco-scope-container">
+		<div class="misco-scope">
+			<div class="misco-scope-title">
+				<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/applicable-scope-title.png" alt="">
+			</div>
+			<div class="misco-scope-desc">
+				Misco-Misju线形材料注射隆鼻这是一种注射式无创隆鼻技术。它是利用特殊耗材(支架)构成的新概念手术方法。特殊支架的牵引张力 可以使<br>鼻子的角度，鼻梁，鼻尖高度，鼻子延长等各个部位达到最理想的效果，从整体上综合修正各种不完美鼻型。
+			</div>
+			<div class="misco-scope-info">
+				<div class="misco-scope-item">
+					<div class="misco-scope-item-img">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-scope-item-1.jpg" alt="">
+					</div>
+					<div class="misco-scope-item-desc">
+						<div class="desc-title">矮鼻</div>
+						<div class="desc-detail">鼻梁低平，整个面部缺乏立体感</div>
+						<div class="line-v line-v-1"></div>
+					</div>
+				</div>
+				<div class="misco-scope-item">
+					<div class="misco-scope-item-desc">
+						<div class="line-v"></div>
+						<div class="desc-title">蒜头鼻</div>
+						<div class="desc-detail">鼻头部皮下脂肪和纤维组织厚，鼻翼软骨增生，鼻翼软骨角度过大及后缩</div>
+					</div>
+					<div class="misco-scope-item-img misco-scope-item-img-2">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-scope-item-2.jpg" alt="">
+					</div>
+				</div>
+				<div class="misco-scope-item">
+					<div class="misco-scope-item-img">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-scope-item-3.jpg" alt="">
+					</div>
+					<div class="misco-scope-item-desc">
+						<div class="desc-title">鹰钩鼻</div>
+						<div class="desc-detail">鼻梁的上端有凸起，形似驼峰或结节状，鼻尖有点下勾</div>
+						<div class="line-v line-v-3"></div>
+					</div>
+				</div>
+				<div class="misco-scope-item">
+					<div class="misco-scope-item-desc">
+						<div class="line-v"></div>
+						<div class="desc-title">箭头鼻</div>
+						<div class="desc-detail">鼻梁高度尚可，但形态笔直，缺乏应有的锥体感</div>
+					</div>
+					<div class="misco-scope-item-img misco-scope-item-img-4">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-scope-item-4.jpg" alt="">
+					</div>
+				</div>
+				<div class="misco-scope-item">
+					<div class="misco-scope-item-img">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-scope-item-5.jpg" alt="">
+					</div>
+					<div class="misco-scope-item-desc">
+						<div class="desc-title">鼻孔外露短鼻</div>
+						<div class="desc-detail">鼻孔呈"八"字型，鼻翼宽大扁平,鼻根低平，鼻体较短，比例失调</div>
+						<div class="line-v line-v-5"></div>
+					</div>
+				</div>
+				<div class="misco-scope-item">
+					<div class="misco-scope-item-desc">
+						<div class="line-v"></div>
+						<div class="desc-title">朝天鼻</div>
+						<div class="desc-detail">鼻孔朝上，鼻孔露得多，鼻梁短</div>
+					</div>
+					<div class="misco-scope-item-img misco-scope-item-img-6">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-scope-item-6.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- misco Technical advantages -->
+	<section class="misco-advantages-container">
+		<div class="misco-advantages">
+			<div class="misco-advantages-title">
+				<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-advantages-title.png" alt="">
+			</div>
+			<div class="misco-advantage-img">
+				<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-advantages-img.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- misco Prosthetic material -->
+	<section class="misco-material-container">
+		<div class="misco-material">
+			<div class="misco-material-title">
+				<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-material-title.png" alt="">
+			</div>
+			<div class="misco-material-info">
+				<div class="misco-material-item">
+					<div class="misco-material-img">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-material-item-1.png" alt="">
+					</div>
+					<div class="material-advantage-tag">优点</div>
+					<div class="material-advantage-desc">
+						自体软骨植入后对组织无刺激作用，易塑形
+					</div>
+					<div class="material-tissue-tag">
+						常用自体软骨组织
+					</div>
+					<div class="material-tissue-desc">
+						肋软骨、耳廓软骨、鼻中隔软骨
+					</div>
+					<div class="material-defect-tag">缺点</div>
+					<div class="material-defect-desc">
+						自体软骨隆鼻，也有发生吸收变形的可能性，但可能性较小
+					</div>
+				</div>
+				<div class="misco-material-item">
+					<div class="misco-material-img">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-material-item-2.png" alt="">
+					</div>
+					<div class="material-advantage-tag">优点</div>
+					<div class="material-advantage-desc">
+						材料来源方便，丰富，易塑形
+					</div>
+					<div class="material-tissue-tag">
+						常用自体软骨组织
+					</div>
+					<div class="material-tissue-desc">
+						牛鼻中隔软骨、牛肋软骨及小牛胸骨，经特殊处理后，可用于隆鼻手术
+					</div>
+					<div class="material-defect-tag">缺点</div>
+					<div class="material-defect-desc">
+						自体软骨隆鼻，也有发生吸收变形的可能性，但可能性较小
+					</div>
+				</div>
+				<div class="misco-material-item">
+					<div class="misco-material-img">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-material-item-3.png" alt="">
+					</div>
+					<div class="material-advantage-tag">优点</div>
+					<div class="material-advantage-desc">
+						有良好的生物相容性，价格低廉，是目前临床首选的隆鼻材料之一
+					</div>
+					<div class="material-defect-tag">缺点</div>
+					<div class="material-defect-desc">
+						不能与机体建立起血液循环，会组织薄弱处穿出皮肤，隆鼻手术后的外观效果较差
+					</div>
+				</div>
+				<div class="misco-material-item">
+					<div class="misco-material-img">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-material-item-4.png" alt="">
+					</div>
+					<div class="material-advantage-tag">优点</div>
+					<div class="material-advantage-desc">
+						是目前最为理想的生物组织代用品。由于其良好的生物相容性及特有的微孔结构，无毒、无致癌、无致敏等副作用，而且人体组织细胞及血管可长入其微孔，形成组织连接，如同自体组织一样
+					</div>
+					<div class="material-defect-tag">缺点</div>
+					<div class="material-defect-desc">
+						价格昂贵，普通求美者接受不了高额的隆鼻手术费用
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- misco Injection material -->
+	<section class="misco-inject-container">
+		<div class="misco-inject">
+			<div class="misco-inject-title">
+				<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-inject-title.png" alt="">
+			</div>
+			<div class="misco-inject-info">
+				<div class="misco-inject-item">
+					<div class="misco-inject-img">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-inject-item-1.jpg" alt="">
+					</div>
+					<div class="inject-item-title">玻尿酸</div>
+					<div class="inject-item-desc">
+						玻尿酸又名糖醛酸及透明质酸，是人体真皮组织的成分之一。玻尿酸注射是将玻尿酸以填充物的方式注入于真皮皱折凹陷或欲丰润的部位，可达到立即性的除皱与改变容貌的效果。但是打进去的玻尿酸会慢慢被人体吸收，所以想要维持效果，就需要间歇性的注射施打。一旦不再继续定期施打，效果就会慢慢淡去，最后完全消失
+					</div>
+				</div>
+				<div class="misco-inject-item">
+					<div class="misco-inject-img">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-inject-item-2.jpg" alt="">
+					</div>
+					<div class="inject-item-title">伊凡露</div>
+					<div class="inject-item-desc">
+						伊凡露可以用来填补相关的深层皱纹、皱褶，没有痛苦，自然持久，而且不受季节限制。其价格比较昂贵，而且一次注射大都需要一支以上，这可不是一般工薪白领能承受得起的。但因其效果好，还是受到很多高端人群的欢迎
+					</div>
+				</div>
+				<div class="misco-inject-item">
+					<div class="misco-inject-img">
+						<img src="__PUBLIC__/Uploads/Publish_img/<?php echo ACTION_NAME;?>/misco-inject-item-3.jpg" alt="">
+					</div>
+					<div class="inject-item-title">自体脂肪</div>
+					<div class="inject-item-desc">
+						自体脂肪就是从人体自身某些部位吸取多余的皮下脂肪细胞，然后将吸出的混合物净化处理，注入药物得到复合脂肪颗粒，选择完整的颗粒脂肪细胞通过注射的方式，再移植到自己需要进行脂肪填充的部位
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

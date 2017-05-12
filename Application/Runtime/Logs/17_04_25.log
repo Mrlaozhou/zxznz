@@ -1,0 +1,35 @@
+[ 2017-04-25T09:16:31+08:00 ] 192.168.0.119 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001612s ]
+SQL: SHOW COLUMNS FROM `zxznz_doctor` [ RunTime:0.118771s ]
+SQL: SELECT d.id,d.name,d.picture,(h.name)hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = '是' ) AND ( h.is_show = '1' ) ORDER BY d.id desc LIMIT 8   [ RunTime:0.180712s ]
+SQL: SHOW COLUMNS FROM `zxznz_hospital` [ RunTime:0.006253s ]
+SQL: SELECT `id`,`name`,`logo` FROM `zxznz_hospital` WHERE ( `is_show` = '1' ) AND ( `is_index` = '1' ) ORDER BY is_top desc LIMIT 10   [ RunTime:0.001238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+NOTIC: [8] Undefined variable: page_key E:\Wamp\host\ZXZNZ\Public\Home\header.html 第 6 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 205 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 224 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 205 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 224 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\Wamp\host\ZXZNZ\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008253s ]
+

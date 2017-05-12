@@ -24,9 +24,13 @@ class BaseController extends Controller
 
 		if( !$user_id )
 		{
-			//未登录
-			$this->success('您好，请先登录！',U('Index/login'));
-			exit;	
+			if( toLower(CONTROLLER_NAME) !== 'wxpay' || toLower(ACTION_NAME) !== 'notify' )
+			{
+				//未登录
+				$this->success('您好，请先登录！',U('Index/login'));
+				exit;
+			}
+				
 		}
 		else
 		{

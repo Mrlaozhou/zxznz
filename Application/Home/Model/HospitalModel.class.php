@@ -29,7 +29,8 @@ class HospitalModel
 							  	'is_show'	=>	array('eq','1'),
 							  	))
 							  ->limit($page->firstRow.','.$page->listRows)
-							  ->order('is_top desc')
+							  //->order('is_top desc')
+							  ->order('id desc')
 							  ->select();
 		return $data;
 	}

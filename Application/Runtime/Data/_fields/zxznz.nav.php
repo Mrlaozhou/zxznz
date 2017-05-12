@@ -1,0 +1,1 @@
+a:8:{i:0;s:2:"id";i:1;s:4:"name";i:2;s:10:"controller";i:3;s:6:"action";i:4;s:7:"is_show";i:5;s:6:"is_top";s:3:"_pk";s:2:"id";s:5:"_type";a:6:{s:2:"id";s:16:"int(11) unsigned";s:4:"name";s:11:"varchar(30)";s:10:"controller";s:11:"varchar(20)";s:6:"action";s:11:"varchar(20)";s:7:"is_show";s:13:"enum('0','1')";s:6:"is_top";s:12:"varchar(255)";}}

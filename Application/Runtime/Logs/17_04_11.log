@@ -1,0 +1,124 @@
+[ 2017-04-11T00:15:46+08:00 ] 148.251.123.200 /index.php/home/doctor/index/navNum/2/p/companies.asp?type_id=4
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+ [ SQL语句 ] : SELECT d.id,d.name,d.hos_id,d.name,d.picture,d.is_show,d.intro,h.name as hos_name FROM zxznz_doctor d LEFT JOIN zxznz_hospital AS h ON d.hos_id=h.id  WHERE ( d.is_show = '是' ) AND ( h.is_show = '1' ) ORDER BY id desc LIMIT -6,6  
+
+[ 2017-04-11T10:30:02+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/link/link.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:02+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/image/image.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:02+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/map/map.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:02+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/formula/formula.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:02+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/video/video.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:02+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/emotion/emotion.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:48+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/link/link.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:48+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/video/video.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:48+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/formula/formula.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:48+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/image/image.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:48+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/map/map.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T10:30:48+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/emotion/emotion.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:39:46+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/link/link.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:39:46+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/formula/formula.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:39:46+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/map/map.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:39:46+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/image/image.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:39:46+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/video/video.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:39:46+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/emotion/emotion.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:43:11+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/link/link.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:43:11+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/image/image.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:43:11+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/video/video.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:43:11+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/map/map.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:43:11+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/formula/formula.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:43:11+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/emotion/emotion.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:47:11+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/link/link.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:47:11+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/formula/formula.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:47:12+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/image/image.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:47:12+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/map/map.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:47:12+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/video/video.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+
+[ 2017-04-11T11:47:12+08:00 ] 180.173.95.54 /index.php/admin/hospital/edit/id/Public/umeditor1_2_2-utf8-php/dialogs/emotion/emotion.js
+ERR: 1054:Unknown column 'Public' in 'where clause'
+ [ SQL语句 ] : SELECT GROUP_CONCAT(type_id)ids FROM zxznz_hos_type WHERE hos_id=Public
+

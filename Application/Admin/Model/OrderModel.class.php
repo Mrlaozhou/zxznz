@@ -17,9 +17,15 @@ class OrderModel extends Model
 		//接受条件参数
 		$where = array();
 		$config = I('post.');
-		$config = array_filter($config);
-
-		//dump($config);
+		
+		//处理参数
+		foreach( $config as $k => $v )
+		{
+			if( trim($v) == FALSE )
+				unset($config[$k]);
+			else
+				$config[$k] = trim($v);
+		}
 
 
 		if( $config )
