@@ -1,0 +1,211 @@
+<layout name="layout" />
+<div class="form-div">
+    <!-- 搜索表单 -->
+    <form action="" name="searchForm">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        选择搜索条件
+        <select name="type" id="Stype">
+            <option value="1" >搜索医院</option>
+            <option value="2" >搜索医生</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        请输入ID
+        <input type="text" name="id" id="Sid">
+
+        <input type="button" value=" 搜索 " class="Sbutton" onclick="search();"/>
+    </form>
+</div>
+<form method="post" action="" name="listForm">
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+                <th>编号（id）</th>
+                <th>医院名称</th>
+                <th>医院地址</th>
+                <th>医院分类</th>
+                <th>评分人数</th>
+                <th>评分总数</th>
+                <th>医院图片</th>
+                <th>医院简介</th>
+                <th>显示状态</th>
+                <th>显示到主页</th>
+                <th>操作</th>
+            </tr>
+            <?php foreach ($data as $k => $v): ?>
+            <tr>
+                <td align="center"><?php echo $v['id']; ?></td>
+                <td align="center"><?php echo $v['name'];?></td>
+                <td align="center"><?php echo $v['address'];?></td>
+                <td align="center"><?php echo $v['type'];?></td>
+                <td align="center"><?php echo $v['score_number'];?></td>
+                <td align="center"><?php echo $v['score_total'];?></td>
+                <td align="center"><img src='__PUBLIC__/Uploads/<?php echo $v['logo'];?>' width="30"></td>
+                <td align="center">略。。</td>
+                <td align="center">
+                    <?php if($v['is_show']):?>
+                        <span style="color:red;">是</span>
+                    <?php else:?>
+                        否
+                    <?php endif;?>
+                </td>
+                <td align="center">
+                    <?php if($v['is_index']):?>
+                        <span style="color:red;">是</span>
+                    <?php else:?>
+                        否
+                    <?php endif;?>
+                </td>
+                <td align="center">
+                    <a href="<?php echo U('Doctor/lst?hos_id='.$v['id']);?>">医生列表</a> | 
+                    <a href="<?php echo U('edit?id='.$v['id']); ?>" title="编辑">编辑</a> |
+                    <a onclick="return confirm('确定要删除吗？');" href="<?php echo U('del?id='.$v['id']); ?>" title="移除">移除</a> 
+                    <a onclick="refreshHosToTop(this);" hosId="<?php echo $v['id'];?>" href="javascript:;" title="移除">刷新置顶</a> 
+                </td>
+            </tr>
+            <?php endforeach; ?>
+            <tr>
+                <td align="right" nowrap="true" colspan="9">
+                    <div id="turn-page">
+                       <?php echo $page;?>
+                        <p style="clean:both;"></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+<script type="text/javascript">
+function refreshHosToTop(a)
+{
+    if( window.confirm('点击确定，刷新置顶！') )
+    {
+        var id = $(a).attr('hosId');
+        $.ajax({
+            url:"/index.php/Admin/Hospital/ajaxRefreshHosTop/id/"+id,
+            type:"GET",
+            dataType:'json',
+            success:function(data){
+                if( data.result )
+                {
+                    $(a).html("<span style='color:red;'>刷新成功</span>");
+                }
+                else
+                {
+                    $(a).html("<span style='color:blue;'>刷新失败</span>");
+                }
+            }
+        })
+    }
+    else
+    {
+        
+    }
+}
+
+
+function search()
+{
+    var type = $('#Stype').val();
+    var id = $('#Sid').val();
+    if( ! id )
+    {
+        alert('请输入ID!');
+        return ;
+    }
+    else if( parseInt(id) != id )
+    {
+        alert( '输入的ID格式错误！' );
+        return ;
+    }
+
+    $.ajax({
+        url:"<?php echo U('search');?>",
+        type:"POST",
+        dataType:"JSON",
+        data:{'type':type,'id':id},
+        success:function( msg )
+        {
+            var html = '';
+            if( msg.status )
+            {
+                if( type == 1 )
+                {
+                    html += "<table cellpadding='3' cellspacing='1'>";
+                    html += "   <tr>";
+                    html += "       <th>编号（id）</th>";
+                    html += "       <th>医院名称</th>";
+                    html += "       <th>医院地址</th>";
+                    html += "       <th>医院分类</th>";
+                    html += "       <th>评分人数</th>";
+                    html += "       <th>评分总数</th>";
+                    html += "       <th>医院图片</th>";
+                    html += "       <th>医院简介</th>";
+                    html += "       <th>显示状态</th>";
+                    html += "       <th>显示到主页</th>";
+                    html += "       <th>操作</th>";
+                    html += "   </tr>";
+                    html += "   <tr>";
+                    html += "       <td align='center'>"+msg.info.id+"</td>";
+                    html += "       <td align='center'>"+msg.info.name+"</td>";
+                    html += "       <td align='center'>"+msg.info.address+"</td>";
+                    html += "       <td align='center'>"+msg.info.type+"</td>";
+                    html += "       <td align='center'>"+msg.info.score_number+"</td>";
+                    html += "       <td align='center'>"+msg.info.score_total+"</td>";
+                    html += "       <td align='center'><img src='__PUBLIC__/Uploads/"+msg.info.logo+"' width='30'></td>";
+                    html += "       <td align='center'>"+"略。。"+"</td>";
+                    html += "       <td align='center'>"+msg.info.is_show+"</td>";
+                    html += "       <td align='center'>"+msg.info.is_index+"</td>";
+                    html += "       <td align='center'>";
+                    html += "           <a href='/index.php/Admin/Doctor/lst/hos_id/"+msg.info.id+"'>医生列表</a> |";
+                    html += "           <a href='/index.php/Admin/Hospital/edit/id/"+msg.info.id+"'>编辑</a> |";
+                    html += "           <a onclick='return confirm('确定要删除吗？');' href='/index.php/Admin/Hospital/del/id/"+msg.info.id+"' title='移除'>移除</a>";
+                    html += "           <a onclick='refreshHosToTop(this);' hosId='"+msg.info.id+"' href='javascript:;' title='移除'>刷新置顶</a>";
+                    html += "       </td>";
+                    html += "   </tr>";
+                    html += "</table>";
+                }
+                else
+                {
+                    html += "<table cellpadding='3' cellspacing='1'>";
+                    html += "   <tr>";
+                    html += "       <th>ID</th>";
+                    html += "       <th>医院Id</th>";
+                    html += "       <th>医生姓名</th>";
+                    html += "       <th>医生照片</th>";
+                    html += "       <th>职务</th>";
+                    html += "       <th>职称</th>";
+                    html += "       <th>擅长技术</th>";
+                    html += "       <th>显示状态</th>";
+                    html += "       <th>显示到主页</th>";
+                    html += "       <th width='160'>操作</th>";
+                    html += "   </tr>";
+                    html += "   <tr>";
+                    html += "       <td align='center'>"+msg.info.id+"</td>";
+                    html += "       <td align='center'>"+msg.info.hos_id+"</td>";
+                    html += "       <td align='center'>"+msg.info.name+"</td>";
+                    html += "       <td align='center'><img src='__PUBLIC__/Uploads/"+msg.info.picture+"' width='30'></td>";
+                    html += "       <td align='center'>"+msg.info.duty+"</td>";
+                    html += "       <td align='center'>"+msg.info.title+"</td>";
+                    html += "       <td align='center'>"+msg.info.good+"</td>";
+                    html += "       <td align='center'>"+msg.info.is_show+"</td>";
+                    html += "       <td align='center'>"+msg.info.is_index+"</td>";
+                    html += "       <td align='center'>";
+                    html += "           <input type='button' onclick='ajaxDelDoctor(this)'' did='<?php echo $v['id'];?>' value='删除'> | ";
+                    html += "           <a href='/index.php/Admin/Doctor/edit/id/"+msg.info.id+"'>修改</a>";
+                    html += "           <a onclick='refreshDocToTop(this);' docId='"+msg.info.id+"' href='javascript:;'>点击刷新</a>";
+                    html += "       </td>";
+                    html += "   </tr>";
+                    html += "</table>";
+                }
+            }
+            else
+            {
+                html = "<span style='color:red;'>无数据...</span>";
+            }
+
+            $("#listDiv").html(html);
+        }
+    })
+}
+</script>
